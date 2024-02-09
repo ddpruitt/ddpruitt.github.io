@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>uow on Hugo Quick Start Site</title>
+    <link>https://example.org/tags/uow/</link>
+    <description>Recent content in uow on Hugo Quick Start Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Oct 2010 20:25:00 -0700</lastBuildDate>
+    <atom:link href="https://example.org/tags/uow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UOW: FileHelpers</title>
+      <link>https://example.org/2010/10/uow-filehelpers.html</link>
+      <pubDate>Wed, 27 Oct 2010 20:25:00 -0700</pubDate>
+      <guid>https://example.org/2010/10/uow-filehelpers.html</guid>
+      <description>The utility of the week is FileHelpers, a .Net library that works with delimited and fixed length files. It helps to import and export data from files, strings or streams.&#xA;I found this recently as I needed to process several CSV files but I did not want to write by hand a parser. Been there, done that way too many times so I did a search and what do you know- someone smarter than me already did it.</description>
+    </item>
+  </channel>
+</rss>

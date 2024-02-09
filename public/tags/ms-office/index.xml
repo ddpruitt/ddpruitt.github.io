@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MS Office on Hugo Quick Start Site</title>
+    <link>https://example.org/tags/ms-office/</link>
+    <description>Recent content in MS Office on Hugo Quick Start Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Sep 2011 02:40:00 -0700</lastBuildDate>
+    <atom:link href="https://example.org/tags/ms-office/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Running Totals in Excel</title>
+      <link>https://example.org/2011/09/running-totals-in-excel_39.html</link>
+      <pubDate>Wed, 28 Sep 2011 02:40:00 -0700</pubDate>
+      <guid>https://example.org/2011/09/running-totals-in-excel_39.html</guid>
+      <description>Excel does not have a running total feature or function built in. All the examples I found on the web to do running totals included VBA code. Not that I have anything against VBA but I thought there should be a way to do running totals with built in worksheet functions.&#xA;Enter our one of our favorite functions: OFFSET(). But first, what is a running total?&#xA;A running total is when you have a list of Values and you want to total of the current Value with the Previous values.</description>
+    </item>
+  </channel>
+</rss>

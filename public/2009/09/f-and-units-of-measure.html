@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>F# and Units of Measure | Hugo Quick Start Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="On Channel 9 they have an interview with Andrew Kennedy about the new Unit of Measure feature in F#.
+This is a really cool feature and I have plans to use it, however there is one problem I have with it: The UOM information is baked into the compiler and can&rsquo;t be persisted.
+An example that Andrew uses it the NASA&rsquo;s Mars Climate Orbiter that crashed due to an issue with Units of Measure (long story short the program thought it was using Newtons when it was actually using Pounds Force).">
+    <meta name="generator" content="Hugo 0.121.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://example.org/2009/09/f-and-units-of-measure.html">
+    
+
+    <meta property="og:title" content="F# and Units of Measure" />
+<meta property="og:description" content="On Channel 9 they have an interview with Andrew Kennedy about the new Unit of Measure feature in F#.
+This is a really cool feature and I have plans to use it, however there is one problem I have with it: The UOM information is baked into the compiler and can&rsquo;t be persisted.
+An example that Andrew uses it the NASA&rsquo;s Mars Climate Orbiter that crashed due to an issue with Units of Measure (long story short the program thought it was using Newtons when it was actually using Pounds Force)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/2009/09/f-and-units-of-measure.html" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2009-09-24T07:06:00-07:00" />
+<meta property="article:modified_time" content="2009-09-24T07:06:00-07:00" />
+
+<meta itemprop="name" content="F# and Units of Measure">
+<meta itemprop="description" content="On Channel 9 they have an interview with Andrew Kennedy about the new Unit of Measure feature in F#.
+This is a really cool feature and I have plans to use it, however there is one problem I have with it: The UOM information is baked into the compiler and can&rsquo;t be persisted.
+An example that Andrew uses it the NASA&rsquo;s Mars Climate Orbiter that crashed due to an issue with Units of Measure (long story short the program thought it was using Newtons when it was actually using Pounds Force)."><meta itemprop="datePublished" content="2009-09-24T07:06:00-07:00" />
+<meta itemprop="dateModified" content="2009-09-24T07:06:00-07:00" />
+<meta itemprop="wordCount" content="304">
+<meta itemprop="keywords" content=".Net," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="F# and Units of Measure"/>
+<meta name="twitter:description" content="On Channel 9 they have an interview with Andrew Kennedy about the new Unit of Measure feature in F#.
+This is a really cool feature and I have plans to use it, however there is one problem I have with it: The UOM information is baked into the compiler and can&rsquo;t be persisted.
+An example that Andrew uses it the NASA&rsquo;s Mars Climate Orbiter that crashed due to an issue with Units of Measure (long story short the program thought it was using Newtons when it was actually using Pounds Force)."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Hugo Quick Start Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">F# and Units of Measure</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2009-09-24T07:06:00-07:00">September 24, 2009</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>On Channel 9 they have an <a href="http://channel9.msdn.com/posts/Charles/Andrew-Kennedy-F-Units-of-Measure/">interview</a> with <a href="http://blogs.msdn.com/andrewkennedy/">Andrew Kennedy</a> about the new Unit of Measure feature in F#.</p>
+<p>This is a really cool feature and I have plans to use it, however there is one problem I have with it: The UOM information is baked into the compiler and can&rsquo;t be persisted.</p>
+<p>An example that Andrew uses it the NASA&rsquo;s Mars Climate Orbiter that crashed due to an issue with Units of Measure (long story short the program thought it was using Newtons when it was actually using Pounds Force). This is a good example of how when you are doing calculations it would be nice if something other than the brain of the programmer was checking the units. But there is another time that UOM is important: When inputting the data.</p>
+<p>I recently worked on an application where the units for a given value could be in English or SI (metric) units and we had an elaborate system to deal with them. The end user could even come up with their own unit system if they wanted to and the application had to be able to handle that.</p>
+<p>Internally and for storage we degreed that all units would be in metric, no If&rsquo;s And&rsquo;s or But&rsquo;s about it. It was only when we displayed the values to the end user did we convert it to their chosen unit system. And for importing data we required that the imported values have their UOM indicated.</p>
+<p>The F# UOM feature is a truly remarkable step in solving one of my pet issues. The next step will have to include a way to persist the UOM information with the data to any data store because without this there is no way to guarantee that the data values coming in are really what we say they are.</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/.net/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">.Net</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2009/05/restful-architecture.html">RESTful Architecture</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/04/json-for-jqgrid-from-aspnet-mvc.html">Json for jqGrid from ASP.Net MVC</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/03/linq-to-sql-roundtrips-sql-trace.html">LINQ to SQL Roundtrips: SQL Trace</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/03/datatable-finding-differences-in-column.html">DataTable: Finding Differences in Column Values</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/02/dataset-more-reasons-to-not-like-it.html">DataSet: More reasons to not like it</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/01/using-idataerrorinfo-for-validation.html">Using IDataErrorInfo for Validation</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2008/05/changing-typed-dataset-connection-string.html">Changing Typed DataSet Connection String</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2008/02/datasets-love-em-hate-em.html">DataSets - Love em Hate em</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2007/03/learning-typemocknet.html">Learning TypeMock.Net</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2007/01/david-hayden-mvp-c-validation.html">David Hayden [MVP C#] : Validation Application Block - Integrating It Into Your Business Layer</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2006/11/what-in-name.html">What&amp;#39;s in a Name?</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2006/11/switched-back-to-resharper.html">Switched Back to ReSharper</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2006/08/building-build-server-with-ccnet.html">Building a build server with CC.NET</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2006/08/reading-net-configuration-files.html">Reading .NET Configuration Files</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2006/06/resharper-vs-coderush.html">Resharper vs CodeRush</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://example.org/" >
+    &copy;  Hugo Quick Start Site 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

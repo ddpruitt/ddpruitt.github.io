@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>DFRobot Wireless Joystick 1.1 (DFR0182) | Hugo Quick Start Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Wireless Joystick Sketch
+Wireless Joystick Schematic
+DFRobot Wiki Page
+The DFRobot&rsquo;s Wireless Joystick V1.1 is similar in size and shape to an XBox controller. The controller, or gamepad as it is also referred to, is an Arduino Deumilanove w/ATMega 328 and requires either an FTDI Basic Breakout or USB Serial Light Adapter to program. The board uses 3.3V, when connecting either the FTDI or USB Adapter verify correct voltage is set on the adapter, via jumpers on the adapter, otherwise you will burn out the gamepad.">
+    <meta name="generator" content="Hugo 0.121.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://example.org/2013/08/dfrobot-wireless-joystick-11-dfr0182_13.html">
+    
+
+    <meta property="og:title" content="DFRobot Wireless Joystick 1.1 (DFR0182)" />
+<meta property="og:description" content="Wireless Joystick Sketch
+Wireless Joystick Schematic
+DFRobot Wiki Page
+The DFRobot&rsquo;s Wireless Joystick V1.1 is similar in size and shape to an XBox controller. The controller, or gamepad as it is also referred to, is an Arduino Deumilanove w/ATMega 328 and requires either an FTDI Basic Breakout or USB Serial Light Adapter to program. The board uses 3.3V, when connecting either the FTDI or USB Adapter verify correct voltage is set on the adapter, via jumpers on the adapter, otherwise you will burn out the gamepad." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/2013/08/dfrobot-wireless-joystick-11-dfr0182_13.html" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2013-08-05T15:06:00-07:00" />
+<meta property="article:modified_time" content="2013-08-05T15:06:00-07:00" />
+
+<meta itemprop="name" content="DFRobot Wireless Joystick 1.1 (DFR0182)">
+<meta itemprop="description" content="Wireless Joystick Sketch
+Wireless Joystick Schematic
+DFRobot Wiki Page
+The DFRobot&rsquo;s Wireless Joystick V1.1 is similar in size and shape to an XBox controller. The controller, or gamepad as it is also referred to, is an Arduino Deumilanove w/ATMega 328 and requires either an FTDI Basic Breakout or USB Serial Light Adapter to program. The board uses 3.3V, when connecting either the FTDI or USB Adapter verify correct voltage is set on the adapter, via jumpers on the adapter, otherwise you will burn out the gamepad."><meta itemprop="datePublished" content="2013-08-05T15:06:00-07:00" />
+<meta itemprop="dateModified" content="2013-08-05T15:06:00-07:00" />
+<meta itemprop="wordCount" content="1151">
+<meta itemprop="keywords" content="Hardware,Arduino," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="DFRobot Wireless Joystick 1.1 (DFR0182)"/>
+<meta name="twitter:description" content="Wireless Joystick Sketch
+Wireless Joystick Schematic
+DFRobot Wiki Page
+The DFRobot&rsquo;s Wireless Joystick V1.1 is similar in size and shape to an XBox controller. The controller, or gamepad as it is also referred to, is an Arduino Deumilanove w/ATMega 328 and requires either an FTDI Basic Breakout or USB Serial Light Adapter to program. The board uses 3.3V, when connecting either the FTDI or USB Adapter verify correct voltage is set on the adapter, via jumpers on the adapter, otherwise you will burn out the gamepad."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Hugo Quick Start Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">DFRobot Wireless Joystick 1.1 (DFR0182)</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2013-08-05T15:06:00-07:00">August 5, 2013</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p><a href="/wp-content/uploads/2013/08/DFR0182.jpg"><img src="https://dl.dropboxusercontent.com/u/480457/techshorts/2013/08/_d_improd_/DFR0182_f_improf_368x294.jpg" alt="DFR0182" title="DFRobot Gamepad"></a></p>
+<p><a href="./wp-content/uploads/2013/08/WirelessJoystick.zip">Wireless Joystick Sketch</a></p>
+<p><a href="./wp-content/uploads/2013/08/Wireless-JoyStick-SCH.pdf">Wireless Joystick Schematic</a></p>
+<p><a href="http://www.dfrobot.com/wiki/index.php?title=Wirless_Joystick_V1.1_(SKU:DFR0182)">DFRobot Wiki Page</a></p>
+<p>The DFRobot&rsquo;s Wireless Joystick V1.1 is similar in size and shape to an XBox controller.  The controller, or gamepad as it is also referred to, is an Arduino Deumilanove w/ATMega 328 and requires either an <a href="/wp-content/uploads/2013/08/DFR0182.jpg" title="FTDI">FTDI Basic Breakout</a> or <a href="/wp-content/uploads/2013/08/DFR0182.jpg" title="USB Serial Light">USB Serial Light Adapter</a> to program.  The board uses 3.3V, when connecting either the FTDI or USB Adapter verify correct voltage is set on the adapter, via jumpers on the adapter, otherwise you will burn out the gamepad.</p>
+<p><a href="https://dl.dropboxusercontent.com/u/480457/techshorts/2013/08/USB_serial_light_adapter.jpg"><img src="https://dl.dropboxusercontent.com/u/480457/techshorts/2013/08/USB_serial_light_adapter.jpg" alt="USB Serial Light Adapter" title="USB Serial Light Adapter"></a></p>
+<p>To program the Arduino you have to take the gamepad apart. Be careful not to loose the small screws and also be careful when you pull the gamepad apart. The buttons are not physically connected to the PCB and have a tendency to fall out. Also the PCB&rsquo;s power is supplied from the batteries in the bottom shell of the gamepad to the board via two small, short wires. Between the buttons falling out and the wires attached to the PCB programming the gamepad becomes a real chore fast. Oh, and the pins for the USB Serial Light / FTDI are on the bottom of the board so when you have adapter plugged in it is propping up the PCB.</p>
+<p>The board has an Xbee socket which supports Xbee, Bluetooth, RF and Wifi.  I used an <a href="https://www.sparkfun.com/products/8665" title="XBee 1mW S1">Xbee S1</a> with no problems. I used an <a href="https://www.sparkfun.com/products/8687" title="XBee Explorer USB">XBee Explorer USB</a> and <a href="http://www.digi.com/support/productdetail?pid=3352" title="X-CTU">X-CTU</a> to configure the XBee S1&rsquo;s.  One pain point I had was that since the Arduino only has one Serial I had to remove the Xbee whenever I wanted to program or monitor the Serial output of the gamepad.</p>
+<p>The gamepad comes with the following inputs:</p>
+<ul>
+<li>
+<p>2 analog triggers,</p>
+</li>
+<li>
+<p>2 analog joysticks,</p>
+</li>
+<li>
+<p>2 joystick buttons,</p>
+</li>
+<li>
+<p>one D-Pad,</p>
+</li>
+<li>
+<p>8 buttons,</p>
+</li>
+<li>
+<p>1 reset buttons.</p>
+</li>
+</ul>
+<p><a href="https://dl.dropboxusercontent.com/u/480457/techshorts/2013/08/DFR0182-Joystick.png"><img src="https://dl.dropboxusercontent.com/u/480457/techshorts/2013/08/DFR0182-Joystick.png" alt="PCB View" title="PCB View"></a></p>
+<p>Finding detailed information on programming the gamepad was difficult, I was able to use a provided <a href="http://www.dfrobot.com/wiki/index.php?title=Wirless_Joystick_V1.1_(SKU:DFR0182)" title="wiki">example</a> sketch as a base for a more complete solution.</p>
+<p>I had originally wanted a NMEA type string but on the receiving end that would have been a lot of processing.  I finally opted for a simpler Key-Value pair, not quite a dictionary but close:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Key</strong></th>
+<th><strong>Value</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$BTN:</td>
+<td>button name</td>
+<td>One of the 14 button names if the button was pressed.</td>
+</tr>
+<tr>
+<td>$LTRG:</td>
+<td>0 - 800</td>
+<td>Left Trigger</td>
+</tr>
+<tr>
+<td>$RTRG:</td>
+<td>0 - 800</td>
+<td>Right Trigger</td>
+</tr>
+<tr>
+<td>$LJSY:</td>
+<td>-500 - 500</td>
+<td>Left Joystick Y</td>
+</tr>
+<tr>
+<td>$LJSX:</td>
+<td>-500 - 500</td>
+<td>Left Joystick X</td>
+</tr>
+<tr>
+<td>$RJSY:</td>
+<td>-500 - 500</td>
+<td>Right Joystick Y</td>
+</tr>
+<tr>
+<td>$RJSX:</td>
+<td>-500 - 500</td>
+<td>Right Joystick X</td>
+</tr>
+</tbody>
+</table>
+<p>One of the main issues I had was with calibration of the triggers and joysticks.  Normally the joystick X/Y values should range from 0 to 1023 and at dead center the value should be 512.  None of the joysticks centered at 512 and on one of them the X values didn&rsquo;t quite make it to 1023.  I measured all the center points and added a buffer range around the zero to ensure a zero value is returned.  After that liberal use of the constrain() and map() methods ensured acceptable ranges were returned by the gamepad.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">printJoySticks</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;$LJSY: &#34;</span>), Serial.<span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">mapJoystickValue</span>(joystick[<span style="color:#ae81ff">0</span>], leftJoyStickYMidPoint)), Serial.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;;&#34;</span>);
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;$LJSX: &#34;</span>), Serial.<span style="color:#a6e22e">print</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">mapJoystickValue</span>(joystick[<span style="color:#ae81ff">1</span>], leftJoyStickXMidPoint)), Serial.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;;&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;$RJSY: &#34;</span>), Serial.<span style="color:#a6e22e">print</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">mapJoystickValue</span>(joystick[<span style="color:#ae81ff">2</span>], rightJoyStickYMidPoint)), Serial.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;;&#34;</span>);
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;$RJSX: &#34;</span>), Serial.<span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">mapJoystickValue</span>(joystick[<span style="color:#ae81ff">3</span>], rightJoyStickXMidPoint)), Serial.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;;&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">mapJoystickValue</span>(<span style="color:#66d9ef">int</span> value, <span style="color:#66d9ef">int</span> midPoint)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> minRange, maxRange, adjustedValue;
+</span></span><span style="display:flex;"><span>    minRange <span style="color:#f92672">=</span> midPoint <span style="color:#f92672">-</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>    maxRange <span style="color:#f92672">=</span> midPoint <span style="color:#f92672">+</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    adjustedValue <span style="color:#f92672">=</span> value <span style="color:#f92672">&gt;</span> minRange <span style="color:#f92672">&amp;&amp;</span> value <span style="color:#f92672">&lt;</span> maxRange <span style="color:#f92672">?</span> <span style="color:#ae81ff">510</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">constrain</span>(value, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1020</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">map</span>(adjustedValue, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1020</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">500</span>, <span style="color:#ae81ff">500</span>);
+</span></span><span style="display:flex;"><span>} 
+</span></span><span style="display:flex;"><span>  
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th><strong>Id</strong></th>
+<th><strong>Name</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X</td>
+<td>X Button</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>Y Button</td>
+</tr>
+<tr>
+<td>A</td>
+<td>A Button</td>
+</tr>
+<tr>
+<td>B</td>
+<td>B Button</td>
+</tr>
+<tr>
+<td>WHITE</td>
+<td>White Button</td>
+</tr>
+<tr>
+<td>BLACK</td>
+<td>Black Button</td>
+</tr>
+<tr>
+<td>BACK</td>
+<td>Back Button</td>
+</tr>
+<tr>
+<td>START</td>
+<td>Start Button</td>
+</tr>
+<tr>
+<td>UP</td>
+<td>D-Pad up</td>
+</tr>
+<tr>
+<td>DOWN</td>
+<td>D-Pad down</td>
+</tr>
+<tr>
+<td>LEFT</td>
+<td>D-Pad left</td>
+</tr>
+<tr>
+<td>RIGHT</td>
+<td>D-Pad right</td>
+</tr>
+<tr>
+<td>LJS</td>
+<td>Left Joystick Button</td>
+</tr>
+<tr>
+<td>RJS</td>
+<td>Right Joystick Button</td>
+</tr>
+</tbody>
+</table>
+<p>When capturing the button states I compared the current state to the previous state.  If the button had been pressed during the last loop() then the buttons state is not re-transmitted to the Serial.  This prevents the button from being sent repeatedly to the receiver.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">printButtons</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">14</span>; i<span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (currButtonState[i] <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> prevButtonState[i] <span style="color:#f92672">!=</span> currButtonState[i])
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;$BTN: &#34;</span>);
+</span></span><span style="display:flex;"><span>            Serial.<span style="color:#a6e22e">print</span>(buttonName[i]);
+</span></span><span style="display:flex;"><span>            Serial.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;;&#34;</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        prevButtonState[i] <span style="color:#f92672">=</span> currButtonState[i];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>} 
+</span></span></code></pre></div><p>Enough talk, time for code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">/*  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Editor : Darren Pruitt  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Date : 07.24.2013  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Product name: Wireless Joystick v1.1 for Arduino  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Product SKU : DFR0182  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Arduino Duemilanove w/ ATmega328P  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Code Version: 1.0  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Description:  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">The sketch for using the gamepad by printing the button states and the analog values of the triggers and joysticks.  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">Pin Mapping  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">=======================  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">D2: X  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">D3: Y  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">D5: A  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">D4: B  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">D6: White  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">D7: Black  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">D8: UP  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">D9: LEFT:  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">D10: DOWN  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">D11: RIGHT  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">D12: Back  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">D13: Start  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">X-A0,Y-A1: Left JOY  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">D21: Left JOY_BUTTON  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">X-A2,Y-A3: Right JOY  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">D22: Right JOY_BUTTON  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">A4: Left Z1  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">A5: Right Z2  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">RST : TURBO  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Gamepad Buttons  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>String buttonName[<span style="color:#ae81ff">14</span>] <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#34;LJS&#34;</span>, <span style="color:#e6db74">&#34;RJS&#34;</span>, <span style="color:#e6db74">&#34;Y&#34;</span>, <span style="color:#e6db74">&#34;X&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;WHITE&#34;</span>, <span style="color:#e6db74">&#34;BLACK&#34;</span>, <span style="color:#e6db74">&#34;UP&#34;</span>, <span style="color:#e6db74">&#34;LEFT&#34;</span>, <span style="color:#e6db74">&#34;DOWN&#34;</span>, <span style="color:#e6db74">&#34;RIGHT&#34;</span>, <span style="color:#e6db74">&#34;BACK&#34;</span>, <span style="color:#e6db74">&#34;START&#34;</span> };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> triggerButton[<span style="color:#ae81ff">2</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> currButtonState[<span style="color:#ae81ff">14</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> prevButtonState[<span style="color:#ae81ff">14</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Gamepad Joysticks  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> joystick[<span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> leftJoyStickXMidPoint, leftJoyStickYMidPoint, rightJoyStickXMidPoint, rightJoyStickYMidPoint;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setup</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">begin</span>(<span style="color:#ae81ff">9600</span>); <span style="color:#75715e">//Init the Serial baudrate  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">InitIO</span>(); <span style="color:#75715e">// Initialize the inputs/outputs and the buffers  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// These values taken from observations of the Joysticks while  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// they were centered.  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    leftJoyStickXMidPoint <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>;
+</span></span><span style="display:flex;"><span>    leftJoyStickYMidPoint <span style="color:#f92672">=</span> <span style="color:#ae81ff">503</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    rightJoyStickXMidPoint <span style="color:#f92672">=</span> <span style="color:#ae81ff">501</span>;
+</span></span><span style="display:flex;"><span>    rightJoyStickYMidPoint <span style="color:#f92672">=</span> <span style="color:#ae81ff">495</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">InitIO</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">14</span>; i<span style="color:#f92672">++</span>) <span style="color:#a6e22e">pinMode</span>(i, INPUT);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">14</span>; i<span style="color:#f92672">++</span>) prevButtonState[i] <span style="color:#f92672">=</span> currButtonState[i] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span>; i<span style="color:#f92672">++</span>) joystick[i] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>; i<span style="color:#f92672">++</span>) triggerButton[i] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loop</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">DataUpdate</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printButtons</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printJoySticks</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printTriggers</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">delay</span>(<span style="color:#ae81ff">100</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">DataUpdate</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">14</span>; i<span style="color:#f92672">++</span>) currButtonState[i] <span style="color:#f92672">=</span> <span style="color:#a6e22e">digitalRead</span>(i);
+</span></span><span style="display:flex;"><span>    currButtonState[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">analogRead</span>(<span style="color:#ae81ff">6</span>);
+</span></span><span style="display:flex;"><span>    currButtonState[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> currButtonState[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">?</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    currButtonState[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">analogRead</span>(<span style="color:#ae81ff">7</span>);
+</span></span><span style="display:flex;"><span>    currButtonState[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> currButtonState[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">?</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span>; i<span style="color:#f92672">++</span>) joystick[i] <span style="color:#f92672">=</span> <span style="color:#a6e22e">analogRead</span>(i);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">6</span>; i<span style="color:#f92672">++</span>) triggerButton[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">4</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">analogRead</span>(i);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">printButtons</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">14</span>; i<span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (currButtonState[i] <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> prevButtonState[i] <span style="color:#f92672">!=</span> currButtonState[i])
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;$BTN: &#34;</span>);
+</span></span><span style="display:flex;"><span>            Serial.<span style="color:#a6e22e">print</span>(buttonName[i]);
+</span></span><span style="display:flex;"><span>            Serial.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;;&#34;</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        prevButtonState[i] <span style="color:#f92672">=</span> currButtonState[i];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">printJoySticks</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;$LJSY: &#34;</span>), Serial.<span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">mapJoystickValue</span>(joystick[<span style="color:#ae81ff">0</span>], leftJoyStickYMidPoint)), Serial.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;;&#34;</span>);
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;$LJSX: &#34;</span>), Serial.<span style="color:#a6e22e">print</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">mapJoystickValue</span>(joystick[<span style="color:#ae81ff">1</span>], leftJoyStickXMidPoint)), Serial.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;;&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;$RJSY: &#34;</span>), Serial.<span style="color:#a6e22e">print</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">mapJoystickValue</span>(joystick[<span style="color:#ae81ff">2</span>], rightJoyStickYMidPoint)), Serial.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;;&#34;</span>);
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;$RJSX: &#34;</span>), Serial.<span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">mapJoystickValue</span>(joystick[<span style="color:#ae81ff">3</span>], rightJoyStickXMidPoint)), Serial.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;;&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">printTriggers</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;$LTRG: &#34;</span>);
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">constrain</span>(triggerButton[<span style="color:#ae81ff">0</span>], <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">800</span>), <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">800</span>, <span style="color:#ae81ff">500</span>, <span style="color:#ae81ff">0</span>));
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;;&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;$RTRG: &#34;</span>);
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">print</span>(<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">constrain</span>(triggerButton[<span style="color:#ae81ff">1</span>], <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">800</span>), <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">800</span>, <span style="color:#ae81ff">500</span>, <span style="color:#ae81ff">0</span>));
+</span></span><span style="display:flex;"><span>    Serial.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;;&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">mapJoystickValue</span>(<span style="color:#66d9ef">int</span> value, <span style="color:#66d9ef">int</span> midPoint)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> minRange, maxRange, adjustedValue;
+</span></span><span style="display:flex;"><span>    minRange <span style="color:#f92672">=</span> midPoint <span style="color:#f92672">-</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>    maxRange <span style="color:#f92672">=</span> midPoint <span style="color:#f92672">+</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//adjustedValue = minRange &lt; value &lt; maxRange ? 510 : constrain(value, 0, 1020);;  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    adjustedValue <span style="color:#f92672">=</span> value <span style="color:#f92672">&gt;</span> minRange <span style="color:#f92672">&amp;&amp;</span> value <span style="color:#f92672">&lt;</span> maxRange <span style="color:#f92672">?</span> <span style="color:#ae81ff">510</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">constrain</span>(value, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1020</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">map</span>(adjustedValue, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1020</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">500</span>, <span style="color:#ae81ff">500</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/hardware/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Hardware</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/arduino/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Arduino</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2010/09/coding-horror-because-everyone-needs.html">Coding Horror: Because Everyone Needs a Router</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2005/10/debian.html">Debian</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://example.org/" >
+    &copy;  Hugo Quick Start Site 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

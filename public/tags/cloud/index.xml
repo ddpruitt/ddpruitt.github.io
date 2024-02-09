@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on Hugo Quick Start Site</title>
+    <link>https://example.org/tags/cloud/</link>
+    <description>Recent content in Cloud on Hugo Quick Start Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Oct 2010 04:41:00 -0700</lastBuildDate>
+    <atom:link href="https://example.org/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When Does Hosting Your Website in the Cloud Make Sense?</title>
+      <link>https://example.org/2010/10/when-does-hosting-your-website-in-cloud.html</link>
+      <pubDate>Fri, 29 Oct 2010 04:41:00 -0700</pubDate>
+      <guid>https://example.org/2010/10/when-does-hosting-your-website-in-cloud.html</guid>
+      <description>When Does Hosting Your Website in the Cloud Make Sense?.&#xA;Discussion of when to use cloud vs own metal. Short answer:&#xA;When you need that extra boost in bandwidth due to being slammed with requests. Basically don&amp;rsquo;t just jump to the cloud because it is &amp;lsquo;cool&amp;rsquo;, use the cloud if it saves you money.</description>
+    </item>
+    <item>
+      <title>The SMAQ stack for big data - O&amp;#39;Reilly Radar</title>
+      <link>https://example.org/2010/09/the-smaq-stack-for-big-data-o-radar.html</link>
+      <pubDate>Fri, 24 Sep 2010 06:47:00 -0700</pubDate>
+      <guid>https://example.org/2010/09/the-smaq-stack-for-big-data-o-radar.html</guid>
+      <description>The SMAQ stack for big data - O&amp;rsquo;Reilly Radar: &amp;ldquo;&amp;lsquo;Big data&amp;rsquo; is data that becomes large enough that it cannot be processed using conventional methods. Creators of web search engines were among the first to confront this problem. Today, social networks, mobile phones, sensors and science contribute to petabytes of data created daily.&amp;rdquo;&#xA;What other types of large data sets can we use this approach on? The Oil &amp;amp; Gas industry deals with tons of data so maybe SMAQ can be used with it.</description>
+    </item>
+    <item>
+      <title>NOAA Satellite Link</title>
+      <link>https://example.org/2005/09/noaa-satellite-link.html</link>
+      <pubDate>Thu, 01 Sep 2005 21:59:00 -0700</pubDate>
+      <guid>https://example.org/2005/09/noaa-satellite-link.html</guid>
+      <description>NOAA Satellite and Information Service Good place to find imagery of Hurricanes.</description>
+    </item>
+  </channel>
+</rss>

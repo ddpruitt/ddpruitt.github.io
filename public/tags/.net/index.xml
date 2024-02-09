@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>.Net on Hugo Quick Start Site</title>
+    <link>https://example.org/tags/.net/</link>
+    <description>Recent content in .Net on Hugo Quick Start Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Jun 2012 05:35:00 -0700</lastBuildDate>
+    <atom:link href="https://example.org/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Excel User Defined Functions with C# and ExcelDna</title>
+      <link>https://example.org/2012/06/excel-user-defined-functions-with-c-and_58.html</link>
+      <pubDate>Wed, 13 Jun 2012 05:35:00 -0700</pubDate>
+      <guid>https://example.org/2012/06/excel-user-defined-functions-with-c-and_58.html</guid>
+      <description>Adding user defined functions to Excel can be laborious, either you use VBA or COM. Why can&amp;rsquo;t Microsoft make it easier to use Visual Studio and .NET within Excel?&#xA;Enter ExcelDna.&#xA;This example creates a static function in C# using Visual Studio. There is documentation that already describes this, what I am adding is:&#xA;Use Visual Studio to create project&#xA;Post Build Events to help create the final XLL file.</description>
+    </item>
+    <item>
+      <title>C# Spirograph Point Generators</title>
+      <link>https://example.org/2012/03/c-spirograph-point-generators.html</link>
+      <pubDate>Mon, 26 Mar 2012 01:02:00 -0700</pubDate>
+      <guid>https://example.org/2012/03/c-spirograph-point-generators.html</guid>
+      <description>Spirograph&amp;rsquo;s are cool. See here and here.&#xA;I put together three ways to generate points for a Spirograph, first using a Brute Force straight generate the points, second using a Parallel.For and third using LINQ.&#xA;Two important classes first. First is a static DoubleExtension class to help determine when two doubles are about equal:&#xA;using System; namespace DC.SpiroGraph.Core { public static class DoubleExtension { public static bool AboutEqual(double x, double y) { double epsilon = Math.</description>
+    </item>
+    <item>
+      <title>FileSystemWatcher With the BlockingCollection</title>
+      <link>https://example.org/2011/10/filesystemwatcher-with.html</link>
+      <pubDate>Mon, 31 Oct 2011 02:48:00 -0700</pubDate>
+      <guid>https://example.org/2011/10/filesystemwatcher-with.html</guid>
+      <description>While working with the FileSystemWatcher I found that if too many files were created the built in buffer will overflowed and files will be skipped. After much research I found out about the Producer-Consumer Problem. Then I found that .Net 4 has the BlockingCollection which helps solve the issue. But how to use it with the FileSystemWatcher?&#xA;On StackOverflow I found Making PLINQ and BlockingCollection work together. I&amp;rsquo;m not so interested in the PLINQ issue but this is a great example of using The BlockingCollection with FileSystemWatcher.</description>
+    </item>
+    <item>
+      <title>Scratching Parallel with StopWatch</title>
+      <link>https://example.org/2011/01/scratching-parallel-with-stopwatch.html</link>
+      <pubDate>Tue, 18 Jan 2011 00:54:00 -0800</pubDate>
+      <guid>https://example.org/2011/01/scratching-parallel-with-stopwatch.html</guid>
+      <description>Threw together a quick parallel stopwatch test. Not sure if the times prove anything.&#xA;using System; using System.Collections.Generic; using System.Diagnostics; using System.Linq; using System.Threading.Tasks; namespace Scratch.ParallelProcessing { class Program { static void Main(string[] args) { const int count = 10000000; var source1 = Enumerable.Range(0, count).ToArray(); var source2 = Enumerable.Range(0, count).ToArray(); var source3 = Enumerable.Range(0, count).ToArray(); Stopwatch stopwatch = new Stopwatch(); var parallelElapsedTimes = new List&amp;lt;TimeSpan&amp;gt;(); var linearElapsedTimes = new List&amp;lt;TimeSpan&amp;gt;(); var linqSelectElapsedTimes = new List&amp;lt;TimeSpan&amp;gt;(); for (int i = 0; i &amp;lt; 10; i++) { stopwatch.</description>
+    </item>
+    <item>
+      <title>Simple MapReduce</title>
+      <link>https://example.org/2011/01/simple-mapreduce.html</link>
+      <pubDate>Mon, 10 Jan 2011 07:04:00 -0800</pubDate>
+      <guid>https://example.org/2011/01/simple-mapreduce.html</guid>
+      <description>Open file, read in lines, return individual words, get length of each word, Order by the length of the words, count each word of specific length.&#xA;static void Main() { var counts = OpenFileReturnWords(@&amp;#34;LoremIpsumDolor.txt&amp;#34;) .AsParallel().Select(w =&amp;gt; w.Length) .AsParallel().ToLookup(k =&amp;gt; k) .Select(c =&amp;gt; new { Number = c.Key, CountOfNumber = c.Count() }) .OrderBy(c =&amp;gt; c.Number); foreach (var count in counts) Console.WriteLine(&amp;#34;Count of {0:0000}: {1}&amp;#34;, count.Number, count.CountOfNumber); Console.WriteLine(&amp;#34;Total Count: {0}&amp;#34;, counts.Sum(c =&amp;gt; c.</description>
+    </item>
+    <item>
+      <title>String Joins</title>
+      <link>https://example.org/2011/01/string-joins.html</link>
+      <pubDate>Tue, 04 Jan 2011 08:27:00 -0800</pubDate>
+      <guid>https://example.org/2011/01/string-joins.html</guid>
+      <description>I&amp;rsquo;ve seen a lot of code to generate SQL statements. Invariable the programmer has an array of strings that they loop through (for example to put into an IN clause) and they always have a check to see of the current item is the first or last in the list. The typical usage is to have a StringBuilder and an if statement which determines if an extra comma (or plus sign or whatever) is added or left out.</description>
+    </item>
+    <item>
+      <title>Parsing Delicious Export File</title>
+      <link>https://example.org/2010/12/parsing-delicious-export-file.html</link>
+      <pubDate>Sat, 25 Dec 2010 04:24:00 -0800</pubDate>
+      <guid>https://example.org/2010/12/parsing-delicious-export-file.html</guid>
+      <description>With all the brew ha ha going on about how Delicious is going to be dumped I made a backup of my Delicious bookmarks. While I was at it I created a quick utility to parse the export file so I could play with the links and tags.&#xA;Key to parsing the file was the HTML Agility Pack. The Bookmark class:&#xA;public class Bookmark { public string Title { get; set; } public string Href { get; set; } public DateTime AddDate { get; set; } public string AddDateEpoch { get; set; } public List&amp;lt;string&amp;gt; Tags { get; set; } public bool IsPrivate { get; set; } public Bookmark() { Tags = new List&amp;lt;string&amp;gt;(); } public static Bookmark New(HtmlNode node) { if (node == null) throw new ArgumentNullException(&amp;#34;node&amp;#34;); var bookmark = new Bookmark { Title = node.</description>
+    </item>
+    <item>
+      <title>ObservableCollection AddRange</title>
+      <link>https://example.org/2010/11/observablecollection-addrange.html</link>
+      <pubDate>Fri, 05 Nov 2010 07:15:00 -0700</pubDate>
+      <guid>https://example.org/2010/11/observablecollection-addrange.html</guid>
+      <description>Damon Payne has a post AddRange for ObservableCollection in Silverlight 3. It is pretty short and sweet way to improve performance when batch adding data to an ObservableCollection.&#xA;He created a SmartCollection:&#xA;public class SmartCollection&amp;lt;T&amp;gt; : ObservableCollection&amp;lt;T&amp;gt; { public SmartCollection() { _suspendCollectionChangeNotification = false; } bool _suspendCollectionChangeNotification; protected override void OnCollectionChanged(NotifyCollectionChangedEventArgs e) { if (!_suspendCollectionChangeNotification) { base.OnCollectionChanged(e); } } public void SuspendCollectionChangeNotification() { _suspendCollectionChangeNotification = true; } public void ResumeCollectionChangeNotification() { _suspendCollectionChangeNotification = false; } public void AddRange(IEnumerable&amp;lt;T&amp;gt; items) { this.</description>
+    </item>
+    <item>
+      <title>RE: Microsoft: Our strategy with Silverlight has shifted | ZDNet</title>
+      <link>https://example.org/2010/10/re-microsoft-our-strategy-with.html</link>
+      <pubDate>Fri, 29 Oct 2010 06:56:00 -0700</pubDate>
+      <guid>https://example.org/2010/10/re-microsoft-our-strategy-with.html</guid>
+      <description>“Silverlight is our development platform for Windows Phone,” he said. Silverlight also has some “sweet spots” in media and line-of-business applications, he said.&#xA;But when it comes to touting Silverlight as Microsoft’s vehicle for delivering a cross-platform runtime, “our strategy has shifted,” Muglia told me.&#xA;via Microsoft: Our strategy with Silverlight has shifted | ZDNet.&#xA;I think it is time to move away from the Microsoft platform. I&amp;rsquo;m getting tired of having to learn a new framework every year just to keep up with their changes.</description>
+    </item>
+    <item>
+      <title>Asynchronous Programming in C#</title>
+      <link>https://example.org/2010/10/asynchronous-programming-in-c.html</link>
+      <pubDate>Fri, 29 Oct 2010 04:48:00 -0700</pubDate>
+      <guid>https://example.org/2010/10/asynchronous-programming-in-c.html</guid>
+      <description>Making Asynchronous Programming Easy&#xA;Asynchronous Programming in C#&#xA;public async void AsyncIntroParallel() { Task&amp;lt;string&amp;gt; page1 = new WebClient() .DownloadStringTaskAsync(new Uri(&amp;#34;http://www.weather.gov&amp;#34;)); Task&amp;lt;string&amp;gt; page2 = new WebClient() .DownloadStringTaskAsync(new Uri(&amp;#34;http://www.weather.gov/climate/&amp;#34;)); Task&amp;lt;string&amp;gt; page3 = new WebClient() .DownloadStringTaskAsync(new Uri(&amp;#34;http://www.weather.gov/rss/&amp;#34;)); WriteLinePageTitle(await page1); WriteLinePageTitle(await page2); WriteLinePageTitle(await page3); } Async CTP has been released. Note: This is not automatically Multi-Threading! From the CTP:&#xA;Merely sticking the &amp;ldquo;Async&amp;rdquo; modifier will not make a method run on the&#xA;background thread. That is correct and by design.</description>
+    </item>
+    <item>
+      <title>Threading AutoResetEvent Example</title>
+      <link>https://example.org/2010/10/threading-autoresetevent-example.html</link>
+      <pubDate>Wed, 27 Oct 2010 20:25:00 -0700</pubDate>
+      <guid>https://example.org/2010/10/threading-autoresetevent-example.html</guid>
+      <description>public class Program { private static System.Threading.AutoResetEvent stopFlag = new System.Threading.AutoResetEvent(false); public static void Main() { ServiceHost svh = new ServiceHost(typeof(ServiceImplementation)); svh.AddServiceEndpoint( typeof(WCFSimple.Contract.IService), new NetTcpBinding(), &amp;#34;net.tcp://localhost:8000&amp;#34;); svh.Open(); Console.WriteLine(&amp;#34;SERVER - Running...&amp;#34;); stopFlag.WaitOne(); Console.WriteLine(&amp;#34;SERVER - Shutting down...&amp;#34;); svh.Close(); Console.WriteLine(&amp;#34;SERVER - Shut down!&amp;#34;); } public static void Stop() { stopFlag.Set(); } } </description>
+    </item>
+    <item>
+      <title>UOW: FileHelpers</title>
+      <link>https://example.org/2010/10/uow-filehelpers.html</link>
+      <pubDate>Wed, 27 Oct 2010 20:25:00 -0700</pubDate>
+      <guid>https://example.org/2010/10/uow-filehelpers.html</guid>
+      <description>The utility of the week is FileHelpers, a .Net library that works with delimited and fixed length files. It helps to import and export data from files, strings or streams.&#xA;I found this recently as I needed to process several CSV files but I did not want to write by hand a parser. Been there, done that way too many times so I did a search and what do you know- someone smarter than me already did it.</description>
+    </item>
+    <item>
+      <title>Use Linq and Reflection to Activate Interface and Execute a Method.</title>
+      <link>https://example.org/2010/09/use-linq-and-reflection-to-activate.html</link>
+      <pubDate>Sun, 05 Sep 2010 07:58:00 -0700</pubDate>
+      <guid>https://example.org/2010/09/use-linq-and-reflection-to-activate.html</guid>
+      <description>I created a simple ICommand interface similar to the one in System.Windows.Input:&#xA;interface ICommand { string Description { get; } bool CanExecute(object parameter); void Execute(); } In my project I created a bunch of classes that implement my ICommand interface and I wanted to find and execute them all. I came up with two ways to do this, using a List and reflection.&#xA;List This is very direct and easy but as I added new commands the list began to grow.</description>
+    </item>
+    <item>
+      <title>InfoQ: WAF and Caliburn: 2 WPF Application Frameworks</title>
+      <link>https://example.org/2010/08/infoq-waf-and-caliburn-2-wpf.html</link>
+      <pubDate>Tue, 24 Aug 2010 12:25:00 -0700</pubDate>
+      <guid>https://example.org/2010/08/infoq-waf-and-caliburn-2-wpf.html</guid>
+      <description>InfoQ: WAF and Caliburn: 2 WPF Application Frameworks&#xA;Two MVVM frameworks.&#xA;WAF is backed by the patterns &amp;amp; practices team (waf.codeplex.com).&#xA;Caliburn though is said to be more mature (caliburnproject.org).&#xA;A third framework mentioned in the notes is mvvmlight (mvvmlight.codeplex.com).</description>
+    </item>
+    <item>
+      <title>Image to Byte Array</title>
+      <link>https://example.org/2009/11/image-to-byte-array.html</link>
+      <pubDate>Mon, 16 Nov 2009 08:09:00 -0800</pubDate>
+      <guid>https://example.org/2009/11/image-to-byte-array.html</guid>
+      <description>In Some ways to convert a byte array to Bitmap we see how to convert a Bitmap to and from a ByteArray. As an alternative I use the following extension method to convert an image to a ByteArray:&#xA;using System.Drawing; namespace DC.Core.Extension { public static class ImageExtension { private static ImageConverter _converter; public static byte[] ToByteArray(this Image image) { if (_converter==null) _converter = new ImageConverter(); return (byte[])_converter.ConvertTo(image, typeof(byte[])); } } } </description>
+    </item>
+    <item>
+      <title>F# and Units of Measure</title>
+      <link>https://example.org/2009/09/f-and-units-of-measure.html</link>
+      <pubDate>Thu, 24 Sep 2009 07:06:00 -0700</pubDate>
+      <guid>https://example.org/2009/09/f-and-units-of-measure.html</guid>
+      <description>On Channel 9 they have an interview with Andrew Kennedy about the new Unit of Measure feature in F#.&#xA;This is a really cool feature and I have plans to use it, however there is one problem I have with it: The UOM information is baked into the compiler and can&amp;rsquo;t be persisted.&#xA;An example that Andrew uses it the NASA&amp;rsquo;s Mars Climate Orbiter that crashed due to an issue with Units of Measure (long story short the program thought it was using Newtons when it was actually using Pounds Force).</description>
+    </item>
+    <item>
+      <title>RESTful Architecture</title>
+      <link>https://example.org/2009/05/restful-architecture.html</link>
+      <pubDate>Thu, 21 May 2009 11:48:00 -0700</pubDate>
+      <guid>https://example.org/2009/05/restful-architecture.html</guid>
+      <description>Found the following in the article ASP.NET MVC: Using RESTful Architecture and thought it worth noting. It describes what the MVC command actions should be, no more than this is needed:&#xA;The endpoint needs to be something meaningful, and Rails uses a nice convention that divides the endpoints into 7 main bits:&#xA;Index - the main “landing” page. This is also the default endpoint. List - a list of whatever “thing” you’re showing them - like a list of Products.</description>
+    </item>
+    <item>
+      <title>Json for jqGrid from ASP.Net MVC</title>
+      <link>https://example.org/2009/04/json-for-jqgrid-from-aspnet-mvc.html</link>
+      <pubDate>Thu, 02 Apr 2009 11:55:00 -0700</pubDate>
+      <guid>https://example.org/2009/04/json-for-jqgrid-from-aspnet-mvc.html</guid>
+      <description>jqGrid takes a specific format for its json (taken from jqGrid documentation):&#xA;{ total: &amp;#34;xxx&amp;#34;, page: &amp;#34;yyy&amp;#34;, records: &amp;#34;zzz&amp;#34;, rows : [ {id:&amp;#34;1&amp;#34;, cell:[&amp;#34;cell11&amp;#34;, &amp;#34;cell12&amp;#34;, &amp;#34;cell13&amp;#34;]}, {id:&amp;#34;2&amp;#34;, cell:[&amp;#34;cell21&amp;#34;, &amp;#34;cell22&amp;#34;, &amp;#34;cell23&amp;#34;]}, ... ] } The tags mean the following:&#xA;total - Total number of Pages. page - Current page Index. records - Total number of records in the rows group. rows - An array with the data plus an identifier. id - The unique row identifier, needs to be an int from what I have found.</description>
+    </item>
+    <item>
+      <title>LINQ to SQL Roundtrips: SQL Trace</title>
+      <link>https://example.org/2009/03/linq-to-sql-roundtrips-sql-trace.html</link>
+      <pubDate>Fri, 27 Mar 2009 12:13:00 -0700</pubDate>
+      <guid>https://example.org/2009/03/linq-to-sql-roundtrips-sql-trace.html</guid>
+      <description>I was looking into reducing the number of database round trips that LINQ to SQL took and found an article by David Hayden that fit the bill. I wanted to see what was actually happening so I slapped together a simple demo.&#xA;Using the Pubs database I created a console app, added the LINQ to SQL classes then created a simple repository class:&#xA;public class AuthorRepository { public author GetAuthorWithTitles(string authorId) { var db = new PubsDataClassesDataContext(); return db.</description>
+    </item>
+    <item>
+      <title>DataTable: Finding Differences in Column Values</title>
+      <link>https://example.org/2009/03/datatable-finding-differences-in-column.html</link>
+      <pubDate>Fri, 13 Mar 2009 10:56:00 -0700</pubDate>
+      <guid>https://example.org/2009/03/datatable-finding-differences-in-column.html</guid>
+      <description>I have two tables in a typed DataSet and I want to compare one column in each table to see if TableA has values that are not in TableB.&#xA;IEnumerable&amp;lt;string&amp;gt; valuesInA = typedDataSet.TableA.AsEnumerable().Select(row =&amp;gt; row.AField); IEnumerable&amp;lt;string&amp;gt; valuesInB = typedDataSet.TableB.AsEnumerable().Select(row =&amp;gt; row.BField); foreach (var notInB in valuesInA.Except(valuesInB)) Debug.WriteLine(string.Format(&amp;#34;Value not in TableB.BField: {0}&amp;#34;, notInB)); This is assuming that both AField and BField are the same type.</description>
+    </item>
+    <item>
+      <title>DataSet: More reasons to not like it</title>
+      <link>https://example.org/2009/02/dataset-more-reasons-to-not-like-it.html</link>
+      <pubDate>Wed, 25 Feb 2009 07:35:00 -0800</pubDate>
+      <guid>https://example.org/2009/02/dataset-more-reasons-to-not-like-it.html</guid>
+      <description>So I am still living in the world of DataSets, when will I ever learn?&#xA;The task was simple, take the contents of DataSetA and merge it into DataSetB. Sure, just use:&#xA;DataSetA.Merge(DataSetB, true) and life will be good. But wait! Why is it when I try to save the merged data from DataSetB to the database it doesn&amp;rsquo;t show up?&#xA;Because the RowState of all the rows in all the tables are set to Unchanged!</description>
+    </item>
+    <item>
+      <title>Using IDataErrorInfo for Validation</title>
+      <link>https://example.org/2009/01/using-idataerrorinfo-for-validation.html</link>
+      <pubDate>Wed, 28 Jan 2009 10:10:00 -0800</pubDate>
+      <guid>https://example.org/2009/01/using-idataerrorinfo-for-validation.html</guid>
+      <description>I read an article on CodeProject titled Total View Validation where the author complains that IDataErrorInfo is inadequate for WPF validation. The assumption he makes is that all the validation code needs to go into the IDataErrorInfo.this[string] property as such:&#xA;public string this[string name] { get { string result = null; if (name == &amp;#34;Age&amp;#34;) if (this.age &amp;lt; 0 || this.age &amp;gt; 150) result = &amp;#34;Age must not be less than 0 or greater than 150.</description>
+    </item>
+    <item>
+      <title>Changing Typed DataSet Connection String</title>
+      <link>https://example.org/2008/05/changing-typed-dataset-connection-string.html</link>
+      <pubDate>Tue, 13 May 2008 13:26:00 -0700</pubDate>
+      <guid>https://example.org/2008/05/changing-typed-dataset-connection-string.html</guid>
+      <description>I was working on a WinForm app that connected to a MS Access database. Yeah, Access sucks but I didn&amp;rsquo;t have a choice in the matter.&#xA;The app itself is used to import a bunch of CSV files into the Access database. It is more of a utility program and it has going through several variations, from being a simple hand driven command line tool to being GUI driven.&#xA;The command line version was all hand controlled.</description>
+    </item>
+    <item>
+      <title>DataSets - Love em Hate em</title>
+      <link>https://example.org/2008/02/datasets-love-em-hate-em.html</link>
+      <pubDate>Sat, 09 Feb 2008 19:12:00 -0800</pubDate>
+      <guid>https://example.org/2008/02/datasets-love-em-hate-em.html</guid>
+      <description>I have a love-hate relationship with DataSets. On the one hand they are easy to use and contain lots of built in functionality. On the other hand they are abused by almost everyone but at the same time severely under utilized, meaning that I rarely see anyone use most of the features available.&#xA;I get the feeling that the majority of developers that use DataSets have blinders on: DataSets are only useful for reading and writing data to the database.</description>
+    </item>
+    <item>
+      <title>Learning TypeMock.Net</title>
+      <link>https://example.org/2007/03/learning-typemocknet.html</link>
+      <pubDate>Sat, 31 Mar 2007 15:26:00 -0700</pubDate>
+      <guid>https://example.org/2007/03/learning-typemocknet.html</guid>
+      <description>We need to implement a better unit testing strategy at work but unfortunately we have code that is not written to be unit tested. Our unit test rely on the state of our database and this has caused so many issues that I&amp;rsquo;m hesitant to even run them.&#xA;To fix the issue I have started working with TypeMock.Net an AOP mocking tool. TypeMock will intercept calls to objects that are called by the code you are testing without actually creating or executing the object.</description>
+    </item>
+    <item>
+      <title>David Hayden [MVP C#] : Validation Application Block - Integrating It Into Your Business Layer</title>
+      <link>https://example.org/2007/01/david-hayden-mvp-c-validation.html</link>
+      <pubDate>Fri, 12 Jan 2007 07:08:00 -0800</pubDate>
+      <guid>https://example.org/2007/01/david-hayden-mvp-c-validation.html</guid>
+      <description>Now that we have this cool Validation Application Block we want to use it with all our business objects. This should immediately send up a red flag that there will probably be some common functionality among all these business objects in how they use the Validation Application Block. Hence some type of layer supertype ( business base class ) will probably be necessary to contain common functionality to remove code redundancy.</description>
+    </item>
+    <item>
+      <title>What&amp;#39;s in a Name?</title>
+      <link>https://example.org/2006/11/what-in-name.html</link>
+      <pubDate>Wed, 08 Nov 2006 11:53:00 -0800</pubDate>
+      <guid>https://example.org/2006/11/what-in-name.html</guid>
+      <description>I have had the joy of reviewing other peoples code lately and I must say that for the most part there is a total lack of attention to detail. Extensive use of copy paste coding, but the one thing that bugs me the most is the naming convention used.&#xA;Can you believe that there are still developers that preface there variables with obj?! Is that not just crazy? Of course it is an object, we work in an OOP language.</description>
+    </item>
+    <item>
+      <title>Switched Back to ReSharper</title>
+      <link>https://example.org/2006/11/switched-back-to-resharper.html</link>
+      <pubDate>Fri, 03 Nov 2006 02:02:00 -0800</pubDate>
+      <guid>https://example.org/2006/11/switched-back-to-resharper.html</guid>
+      <description>I uninstalled CodeRush and re-installed ReSharper. CodeRush just wasn&amp;rsquo;t doing anything for me productivity wise. I felt that I spent more time fighting it then working with it.&#xA;Maybe I just feel more comfortable with ReSharper. I feel that with it I don&amp;rsquo;t have to memorize as many key combinations.&#xA;I&amp;rsquo;ll give it another month and see what I think then.</description>
+    </item>
+    <item>
+      <title>Building a build server with CC.NET</title>
+      <link>https://example.org/2006/08/building-build-server-with-ccnet.html</link>
+      <pubDate>Thu, 31 Aug 2006 01:12:00 -0700</pubDate>
+      <guid>https://example.org/2006/08/building-build-server-with-ccnet.html</guid>
+      <description>So I have started implementing CruiseControl.Net at work and I have to say it is pretty fun. I’ve built a bunch on Nant scripts to build our SOA middle tier, installed CC.Net and setup the first project.&#xA;What I am struggling with now is getting VSS to update the source files. I think I am just missing something small but for some reason I can’t get the files to update.</description>
+    </item>
+    <item>
+      <title>Reading .NET Configuration Files</title>
+      <link>https://example.org/2006/08/reading-net-configuration-files.html</link>
+      <pubDate>Wed, 09 Aug 2006 08:20:00 -0700</pubDate>
+      <guid>https://example.org/2006/08/reading-net-configuration-files.html</guid>
+      <description>I am currently working on a small app that will scan our environment and verify that all the configuration settings are correct. One thing I found was that you can’t open just any .config file using System.Configuration, it has to be named the same as the calling assembly.&#xA;What a pain.</description>
+    </item>
+    <item>
+      <title>Resharper vs CodeRush</title>
+      <link>https://example.org/2006/06/resharper-vs-coderush.html</link>
+      <pubDate>Sat, 10 Jun 2006 20:48:00 -0700</pubDate>
+      <guid>https://example.org/2006/06/resharper-vs-coderush.html</guid>
+      <description>So I used Resharper for a long time and I really liked it. There were a few things I didn’t like, especially the time added to a project load. And every once in a while it would lock up. But the features I liked were very useful: Find all usages, simple keyboard shortcuts, code reformatting. But the two most useful things it did was 1) to but a bar along the right side of the screen with orange or red lines for were the code had problems, and 2) clean up the using statements.</description>
+    </item>
+    <item>
+      <title>Semi-XP Development</title>
+      <link>https://example.org/2006/02/semi-xp-development.html</link>
+      <pubDate>Fri, 17 Feb 2006 20:59:00 -0800</pubDate>
+      <guid>https://example.org/2006/02/semi-xp-development.html</guid>
+      <description>So, we are doing XP want to be development at work. It is more of a war room programming environment and not true paired programming. What I am finding that I like more and more is not the coding per say, but the testing and development automation. I have been using TestDriven.NET and mbUnit a lot and am just now starting to explore NCover. Also, have been using NAnt scripting for builds and have installed CruiseControl.</description>
+    </item>
+    <item>
+      <title>Rob Caron&amp;#39;s Blog - A Team System Nexus : Suggested Reading - 2005-07-31</title>
+      <link>https://example.org/2005/08/rob-caron-blog-team-system-nexus.html</link>
+      <pubDate>Mon, 15 Aug 2005 13:13:00 -0700</pubDate>
+      <guid>https://example.org/2005/08/rob-caron-blog-team-system-nexus.html</guid>
+      <description>Rob Caron&amp;rsquo;s Blog - A Team System Nexus : Suggested Reading - 2005-07-31&#xA;Saving and Restoring the Location, Size and Windows State of a .NET Form&#xA;A list of must read articles. Go forth and Read.</description>
+    </item>
+    <item>
+      <title>if we got this far, then everything is working properly</title>
+      <link>https://example.org/2005/08/if-we-got-this-far-then-everything-is.html</link>
+      <pubDate>Thu, 04 Aug 2005 12:14:00 -0700</pubDate>
+      <guid>https://example.org/2005/08/if-we-got-this-far-then-everything-is.html</guid>
+      <description>Comment found in a code that I was reviewing:&#xA;if we got this far, then everything is working properly&#xA;Why does this send shivers up my spine? The procedure is 91 lines long and this comment appears on line 43. What about the other 48 lines? What if they fail? I should add the following comment to the end of the procedure:&#xA;if we got this far then there is a God.</description>
+    </item>
+    <item>
+      <title>Resources for Packaging and Deploying .NET Compact Framework-based applications</title>
+      <link>https://example.org/2004/12/resources-for-packaging-and-deploying.html</link>
+      <pubDate>Sun, 05 Dec 2004 02:14:00 -0800</pubDate>
+      <guid>https://example.org/2004/12/resources-for-packaging-and-deploying.html</guid>
+      <description>Resources for Packaging and Deploying .NET Compact Framework-based applications&#xA;Jono Shares some sources for packaging and deploying .NET CF apps.</description>
+    </item>
+    <item>
+      <title>CF Form Disposal</title>
+      <link>https://example.org/2004/11/cf-form-disposal.html</link>
+      <pubDate>Fri, 12 Nov 2004 04:40:00 -0800</pubDate>
+      <guid>https://example.org/2004/11/cf-form-disposal.html</guid>
+      <description>The December 2004 issue of MSDN contains an article on developing CF apps. Part of the article advocates the disposing of forms as soon as you are done using them in order to conserve memory. I disagree with this.&#xA;I have found that caching forms improves the performance of a CF application. It takes a long time to load a form in CF so why should I make the user wait every time he has to reopen the same form?</description>
+    </item>
+    <item>
+      <title>Period Matirx Twisting</title>
+      <link>https://example.org/2004/01/period-matirx-twisting.html</link>
+      <pubDate>Fri, 30 Jan 2004 09:35:00 -0800</pubDate>
+      <guid>https://example.org/2004/01/period-matirx-twisting.html</guid>
+      <description>The Period Matrix table, Pd_Matrix, is used in calculating accounting period formulas. These formulas include current month, quarter or years activity or balance. These formulas can also be created using standard SQL functions but not all functions are common between SQL Server and MS Access. The Period Matrix has the advantage in that it can be used in any DBMS and it also can be used in table pivoting and folding.</description>
+    </item>
+  </channel>
+</rss>

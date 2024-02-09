@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>C# Spirograph Point Generators | Hugo Quick Start Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Spirograph&rsquo;s are cool. See here and here.
+I put together three ways to generate points for a Spirograph, first using a Brute Force straight generate the points, second using a Parallel.For and third using LINQ.
+Two important classes first. First is a static DoubleExtension class to help determine when two doubles are about equal:
+using System; namespace DC.SpiroGraph.Core { public static class DoubleExtension { public static bool AboutEqual(double x, double y) { double epsilon = Math.">
+    <meta name="generator" content="Hugo 0.121.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://example.org/2012/03/c-spirograph-point-generators.html">
+    
+
+    <meta property="og:title" content="C# Spirograph Point Generators" />
+<meta property="og:description" content="Spirograph&rsquo;s are cool. See here and here.
+I put together three ways to generate points for a Spirograph, first using a Brute Force straight generate the points, second using a Parallel.For and third using LINQ.
+Two important classes first. First is a static DoubleExtension class to help determine when two doubles are about equal:
+using System; namespace DC.SpiroGraph.Core { public static class DoubleExtension { public static bool AboutEqual(double x, double y) { double epsilon = Math." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/2012/03/c-spirograph-point-generators.html" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2012-03-26T01:02:00-07:00" />
+<meta property="article:modified_time" content="2012-03-26T01:02:00-07:00" />
+
+<meta itemprop="name" content="C# Spirograph Point Generators">
+<meta itemprop="description" content="Spirograph&rsquo;s are cool. See here and here.
+I put together three ways to generate points for a Spirograph, first using a Brute Force straight generate the points, second using a Parallel.For and third using LINQ.
+Two important classes first. First is a static DoubleExtension class to help determine when two doubles are about equal:
+using System; namespace DC.SpiroGraph.Core { public static class DoubleExtension { public static bool AboutEqual(double x, double y) { double epsilon = Math."><meta itemprop="datePublished" content="2012-03-26T01:02:00-07:00" />
+<meta itemprop="dateModified" content="2012-03-26T01:02:00-07:00" />
+<meta itemprop="wordCount" content="937">
+<meta itemprop="keywords" content=".Net,graphic,Spirograph,c#,math," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="C# Spirograph Point Generators"/>
+<meta name="twitter:description" content="Spirograph&rsquo;s are cool. See here and here.
+I put together three ways to generate points for a Spirograph, first using a Brute Force straight generate the points, second using a Parallel.For and third using LINQ.
+Two important classes first. First is a static DoubleExtension class to help determine when two doubles are about equal:
+using System; namespace DC.SpiroGraph.Core { public static class DoubleExtension { public static bool AboutEqual(double x, double y) { double epsilon = Math."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Hugo Quick Start Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">C# Spirograph Point Generators</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2012-03-26T01:02:00-07:00">March 26, 2012</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p><a href="http://en.wikipedia.org/wiki/Spirograph" title="Spirograph's">Spirograph&rsquo;s</a>  are cool.  See <a href="http://www.math.psu.edu/dlittle/java/parametricequations/spirograph/SpiroGraph1.0/index.html" title="here">here</a> and <a href="http://www.math.psu.edu/dlittle/java/parametricequations/spirograph/index.html" title="here">here</a>.</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/9/90/Various_Spirograph_Designs.jpg" alt="" title="Various Spirograph Designs"></p>
+<p>I put together three ways to generate points for a Spirograph, first using a Brute Force straight generate the points, second using a Parallel.For and third using LINQ.</p>
+<p>Two important classes first.  First is a static DoubleExtension class to help determine when two doubles are about equal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> DC.SpiroGraph.Core
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DoubleExtension</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span> AboutEqual(<span style="color:#66d9ef">double</span> x, <span style="color:#66d9ef">double</span> y)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">double</span> epsilon = Math.Max(Math.Abs(x), Math.Abs(y)) * <span style="color:#ae81ff">1E-15</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> variance = x &gt; y ? x - y : y - x;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> Math.Abs(variance)
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Second, a simple Point class. Yeah, I probably could have used the Drawing Point class.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System;  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Diagnostics;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> DC.SpiroGraph.Core  
+</span></span><span style="display:flex;"><span>{  
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">[DebuggerDisplay(&#34;X = {X}, Y = {Y}&#34;)]</span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Point</span>  
+</span></span><span style="display:flex;"><span>{  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">double</span> X { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">double</span> Y { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">bool</span> NotAboutEqualTo(Point point)  
+</span></span><span style="display:flex;"><span>{  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> !DoubleExtension.AboutEqual(X, point.X) &amp;&amp; !DoubleExtension.AboutEqual(Y, point.Y);  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>}  
+</span></span></code></pre></div><p>Note the use of DebuggerDisplay to help with the debugging.<br>
+The SpiroGraphGenerator:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Collections.Generic;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Linq;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Threading.Tasks;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> DC.SpiroGraph.Core
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SpiroGraphGenerator</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// &lt;summary&gt;  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// Radius, R, of Circle (equator) centered at the origin  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// &lt;/summary&gt;  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">double</span> Radius1 { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// &lt;summary&gt;  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// Radius, r, of circle (bicyle wheel) cetered at (R + r, 0)  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// &lt;/summary&gt;  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">double</span> Radius2 { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// &lt;summary&gt;  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// Distance of Point (reflector) from the center of Circle 2 (the circle of Radius2)  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// &lt;/summary&gt;  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">double</span> Position { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// &lt;summary&gt;  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// Controls how precise the SpiroGraph is drawn.  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// Controls t of f(t).  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// Resolution = 360, t = 0, 1, 2, 3, ...,360  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// Resolution = 180, t = 0, 2, 4, 6, ... 360  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">///  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">/// &lt;/summary&gt;  </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">double</span> Resolution { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> IEnumerable&lt;Point&gt; GetSpiroGraphPoints()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> t = <span style="color:#ae81ff">0d</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> sumOfRadius = Radius1 + Radius2;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> firstPoint = <span style="color:#66d9ef">new</span> Point { X = Xt(sumOfRadius, Radius2, Position, t), Y = Yt(sumOfRadius, Radius2, Position, t) };
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> currentPoint = <span style="color:#66d9ef">new</span> Point { X = firstPoint.X, Y = firstPoint.Y };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Convert to Radians  </span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> increment = (<span style="color:#ae81ff">360</span> / Resolution) * Math.PI / <span style="color:#ae81ff">180</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> i = <span style="color:#ae81ff">0</span>; i &lt; Resolution; i++)
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> currentPoint;
+</span></span><span style="display:flex;"><span>                    t += increment;
+</span></span><span style="display:flex;"><span>                    currentPoint = <span style="color:#66d9ef">new</span> Point { X = Xt(sumOfRadius, Radius2, Position, t), Y = Yt(sumOfRadius, Radius2, Position, t) };
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            } <span style="color:#66d9ef">while</span> (currentPoint.NotAboutEqualTo(firstPoint));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> currentPoint;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> IEnumerable&lt;Point&gt; GetSpiroGraphPoints2()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> endPoints = FindAllEndPoints();
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> numberOfEndPonits = endPoints.Count();
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> numberOfPoints = Convert.ToInt32((numberOfEndPonits - <span style="color:#ae81ff">1</span>) * Resolution + <span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> points = <span style="color:#66d9ef">new</span> Point[numberOfPoints];
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> resolution = Convert.ToInt32(Resolution);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> sumOfRadius = Radius1 + Radius2;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Convert to Radians  </span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> increment = (<span style="color:#ae81ff">360</span> / Resolution) * Math.PI / <span style="color:#ae81ff">180</span>;
+</span></span><span style="display:flex;"><span>            points[<span style="color:#ae81ff">0</span>] = GetPoint(sumOfRadius, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            Parallel.For(<span style="color:#ae81ff">1</span>, numberOfEndPonits, i =&gt;
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> j = <span style="color:#ae81ff">0</span>; j &lt; resolution; j++)
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">var</span> pointIndex = (i - <span style="color:#ae81ff">1</span>) * resolution + j + <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">var</span> t = pointIndex * increment;
+</span></span><span style="display:flex;"><span>                    points[pointIndex] = GetPoint(sumOfRadius, t);
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            });
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> points;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> IEnumerable&lt;Point&gt; GetSpiroGraphPoints3()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> endPoints = FindAllEndPoints();
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> numberOfEndPonits = endPoints.Count();
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> numberOfPoints = Convert.ToInt32((numberOfEndPonits - <span style="color:#ae81ff">1</span>) * Resolution + <span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> sumOfRadius = Radius1 + Radius2;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Convert to Radians  </span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> increment = (<span style="color:#ae81ff">360</span> / Resolution) * Math.PI / <span style="color:#ae81ff">180</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> points2 = Enumerable.Range(<span style="color:#ae81ff">0</span>, numberOfPoints)
+</span></span><span style="display:flex;"><span>            .Select(i =&gt; <span style="color:#66d9ef">new</span> { Index = i, t = i * increment })
+</span></span><span style="display:flex;"><span>            .Select(it =&gt; <span style="color:#66d9ef">new</span> { it.Index, point = GetPoint(sumOfRadius, it.t) })
+</span></span><span style="display:flex;"><span>            .OrderBy(ip =&gt; ip.Index)
+</span></span><span style="display:flex;"><span>            .Select(ip =&gt; ip.point);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> points2;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> IEnumerable&lt;Point&gt; FindAllEndPoints()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> t = <span style="color:#ae81ff">0d</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> sumOfRadius = CalculateSumOfRadius();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> firstPoint = GetPoint(sumOfRadius, t);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> currentPoint = <span style="color:#66d9ef">new</span> Point { X = firstPoint.X, Y = firstPoint.Y };
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Convert to Radians  </span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> increment = CalculateIncrement();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> currentPoint;
+</span></span><span style="display:flex;"><span>                t += (increment * Resolution);
+</span></span><span style="display:flex;"><span>                currentPoint = GetPoint(sumOfRadius, t);
+</span></span><span style="display:flex;"><span>            } <span style="color:#66d9ef">while</span> (currentPoint.NotAboutEqualTo(firstPoint));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> currentPoint;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">double</span> CalculateIncrement()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> (<span style="color:#ae81ff">360</span> / Resolution) * Math.PI / <span style="color:#ae81ff">180</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">double</span> CalculateSumOfRadius()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> Radius1 + Radius2;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">double</span> Xt(<span style="color:#66d9ef">double</span> sumOfRadius, <span style="color:#66d9ef">double</span> radius2, <span style="color:#66d9ef">double</span> position, <span style="color:#66d9ef">double</span> t)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> sumOfRadius * Math.Cos(t) + position * Math.Cos(sumOfRadius * t / radius2);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">double</span> Yt(<span style="color:#66d9ef">double</span> sumOfRadius, <span style="color:#66d9ef">double</span> radius2, <span style="color:#66d9ef">double</span> position, <span style="color:#66d9ef">double</span> t)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> sumOfRadius * Math.Sin(t) + position * Math.Sin(sumOfRadius * t / radius2);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> Point GetPoint(<span style="color:#66d9ef">double</span> sumOfRadius, <span style="color:#66d9ef">double</span> t)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Point { X = Xt(sumOfRadius, Radius2, Position, t), Y = Yt(sumOfRadius, Radius2, Position, t) };
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>I created a simple WinForm app using DevExpress controls, this is how I populated the graph with points:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Linq;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Windows.Forms;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> DC.SpiroGraph.WinForm
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">partial</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Form1</span> : Form
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> Form1()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            InitializeComponent();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> CreateData(<span style="color:#66d9ef">bool</span> useParallel)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">try</span>
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                Cursor.Current = Cursors.WaitCursor;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">var</span> sg = <span style="color:#66d9ef">new</span> Core.SpiroGraphGenerator
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    Radius1 = Convert.ToDouble(radius1TextEdit.Text),
+</span></span><span style="display:flex;"><span>                    Radius2 = Convert.ToDouble(radius2TextEdit.Text),
+</span></span><span style="display:flex;"><span>                    Position = Convert.ToDouble(positionTextEdit.Text),
+</span></span><span style="display:flex;"><span>                    Resolution = Convert.ToDouble(resolutionTextEdit.Text)
+</span></span><span style="display:flex;"><span>                };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">var</span> endPoints = sg.FindAllEndPoints();
+</span></span><span style="display:flex;"><span>                endPointCountLabel.Text = <span style="color:#66d9ef">string</span>.Format(<span style="color:#e6db74">&#34;# of End Points: {0}&#34;</span>, endPoints.Count());
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">var</span> graphPoints = useParallel ? sg.GetSpiroGraphPoints2() : sg.GetSpiroGraphPoints3();
+</span></span><span style="display:flex;"><span>                pointCountLabel.Text = <span style="color:#66d9ef">string</span>.Format(<span style="color:#e6db74">&#34;# of Points: {0}&#34;</span>, graphPoints.Count());
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                chartControl1.Series[<span style="color:#ae81ff">0</span>].DataSource = graphPoints;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">catch</span> (Exception)
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// Eat It  </span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">finally</span>
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                Cursor.Current = Cursors.Default;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> Form1_Load(<span style="color:#66d9ef">object</span> sender, EventArgs e)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">var</span> series = chartControl1.Series[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>            series.Label.Visible = <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>            series.ArgumentDataMember = <span style="color:#e6db74">&#34;X&#34;</span>;
+</span></span><span style="display:flex;"><span>            series.ValueDataMembers.AddRange(<span style="color:#66d9ef">new</span> <span style="color:#66d9ef">string</span>[] { <span style="color:#e6db74">&#34;Y&#34;</span> });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            radius1TextEdit.Text = <span style="color:#e6db74">&#34;60&#34;</span>;
+</span></span><span style="display:flex;"><span>            radius2TextEdit.Text = <span style="color:#e6db74">&#34;60&#34;</span>;
+</span></span><span style="display:flex;"><span>            positionTextEdit.Text = <span style="color:#e6db74">&#34;60&#34;</span>;
+</span></span><span style="display:flex;"><span>            resolutionTextEdit.Text = <span style="color:#e6db74">&#34;270&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            CreateData(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> simpleButton1_Click(<span style="color:#66d9ef">object</span> sender, EventArgs e)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            CreateData(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> simpleButton2_Click(<span style="color:#66d9ef">object</span> sender, EventArgs e)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            CreateData(<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Future changes will be to make a series for each rotation about the main circle, this way we can start adding different colors to the graph.</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/.net/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">.Net</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/graphic/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">graphic</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/spirograph/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Spirograph</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/c#/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">c#</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/math/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">math</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/2011/10/filesystemwatcher-with.html">FileSystemWatcher With the BlockingCollection</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2011/01/scratching-parallel-with-stopwatch.html">Scratching Parallel with StopWatch</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2011/01/simple-mapreduce.html">Simple MapReduce</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2011/01/string-joins.html">String Joins</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/12/parsing-delicious-export-file.html">Parsing Delicious Export File</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/11/observablecollection-addrange.html">ObservableCollection AddRange</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/10/re-microsoft-our-strategy-with.html">RE: Microsoft: Our strategy with Silverlight has shifted | ZDNet</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/10/asynchronous-programming-in-c.html">Asynchronous Programming in C#</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/10/uow-filehelpers.html">UOW: FileHelpers</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/10/threading-autoresetevent-example.html">Threading AutoResetEvent Example</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/09/use-linq-and-reflection-to-activate.html">Use Linq and Reflection to Activate Interface and Execute a Method.</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2010/08/infoq-waf-and-caliburn-2-wpf.html">InfoQ: WAF and Caliburn: 2 WPF Application Frameworks</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/11/image-to-byte-array.html">Image to Byte Array</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/09/f-and-units-of-measure.html">F# and Units of Measure</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/2009/05/restful-architecture.html">RESTful Architecture</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://example.org/" >
+    &copy;  Hugo Quick Start Site 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

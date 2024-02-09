@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Standard on Hugo Quick Start Site</title>
+    <link>https://example.org/tags/web-standard/</link>
+    <description>Recent content in Web Standard on Hugo Quick Start Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Apr 2009 11:55:00 -0700</lastBuildDate>
+    <atom:link href="https://example.org/tags/web-standard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Json for jqGrid from ASP.Net MVC</title>
+      <link>https://example.org/2009/04/json-for-jqgrid-from-aspnet-mvc.html</link>
+      <pubDate>Thu, 02 Apr 2009 11:55:00 -0700</pubDate>
+      <guid>https://example.org/2009/04/json-for-jqgrid-from-aspnet-mvc.html</guid>
+      <description>jqGrid takes a specific format for its json (taken from jqGrid documentation):&#xA;{ total: &amp;#34;xxx&amp;#34;, page: &amp;#34;yyy&amp;#34;, records: &amp;#34;zzz&amp;#34;, rows : [ {id:&amp;#34;1&amp;#34;, cell:[&amp;#34;cell11&amp;#34;, &amp;#34;cell12&amp;#34;, &amp;#34;cell13&amp;#34;]}, {id:&amp;#34;2&amp;#34;, cell:[&amp;#34;cell21&amp;#34;, &amp;#34;cell22&amp;#34;, &amp;#34;cell23&amp;#34;]}, ... ] } The tags mean the following:&#xA;total - Total number of Pages. page - Current page Index. records - Total number of records in the rows group. rows - An array with the data plus an identifier. id - The unique row identifier, needs to be an int from what I have found.</description>
+    </item>
+  </channel>
+</rss>

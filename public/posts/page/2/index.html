@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Hugo Quick Start Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.121.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+    
+      <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="Hugo Quick Start Site" />
+      <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="Hugo Quick Start Site" />
+      
+    
+
+    
+      <link rel="canonical" href="https://example.org/posts/">
+    
+
+    <meta property="og:title" content="Posts" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://example.org/posts/" />
+
+<meta itemprop="name" content="Posts">
+<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content=""/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Hugo Quick Start Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          Posts
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2011/01/string-joins.html" class="link black dim">
+        String Joins
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I&rsquo;ve seen a lot of code to generate SQL statements. Invariable the programmer has an array of strings that they loop through (for example to put into an IN clause) and they always have a check to see of the current item is the first or last in the list. The typical usage is to have a StringBuilder and an if statement which determines if an extra comma (or plus sign or whatever) is added or left out.
+    </div>
+    <a href="/2011/01/string-joins.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2010/12/parsing-delicious-export-file.html" class="link black dim">
+        Parsing Delicious Export File
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      With all the brew ha ha going on about how Delicious is going to be dumped I made a backup of my Delicious bookmarks. While I was at it I created a quick utility to parse the export file so I could play with the links and tags.
+Key to parsing the file was the HTML Agility Pack. The Bookmark class:
+public class Bookmark { public string Title { get; set; } public string Href { get; set; } public DateTime AddDate { get; set; } public string AddDateEpoch { get; set; } public List&lt;string&gt; Tags { get; set; } public bool IsPrivate { get; set; } public Bookmark() { Tags = new List&lt;string&gt;(); } public static Bookmark New(HtmlNode node) { if (node == null) throw new ArgumentNullException(&#34;node&#34;); var bookmark = new Bookmark { Title = node.
+    </div>
+    <a href="/2010/12/parsing-delicious-export-file.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2010/11/moved.html" class="link black dim">
+        Moved
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      This blog has been moved to techshorts.ddpruitt.net
+    </div>
+    <a href="/2010/11/moved.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2010/11/observablecollection-addrange.html" class="link black dim">
+        ObservableCollection AddRange
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Damon Payne has a post AddRange for ObservableCollection in Silverlight 3. It is pretty short and sweet way to improve performance when batch adding data to an ObservableCollection.
+He created a SmartCollection:
+public class SmartCollection&lt;T&gt; : ObservableCollection&lt;T&gt; { public SmartCollection() { _suspendCollectionChangeNotification = false; } bool _suspendCollectionChangeNotification; protected override void OnCollectionChanged(NotifyCollectionChangedEventArgs e) { if (!_suspendCollectionChangeNotification) { base.OnCollectionChanged(e); } } public void SuspendCollectionChangeNotification() { _suspendCollectionChangeNotification = true; } public void ResumeCollectionChangeNotification() { _suspendCollectionChangeNotification = false; } public void AddRange(IEnumerable&lt;T&gt; items) { this.
+    </div>
+    <a href="/2010/11/observablecollection-addrange.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2010/10/rewhy-is-microsoft-suddenly-so-hot-for.html" class="link black dim">
+        RE:Why is Microsoft suddenly so hot for HTML5? | Betanews
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Last week, Gartner predicted that mobile would be a trillion-dollar industry by 2014. It&rsquo;s a market Microsoft doesn&rsquo;t want to be shut out of.
+via Why is Microsoft suddenly so hot for HTML5? | Betanews.
+This and my earlier post reinforce my belief that it is time to break the chains of Microsoft. Meaning it is time for me to stop being a Mort.
+    </div>
+    <a href="/2010/10/rewhy-is-microsoft-suddenly-so-hot-for.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2010/10/re-microsoft-our-strategy-with.html" class="link black dim">
+        RE: Microsoft: Our strategy with Silverlight has shifted | ZDNet
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      “Silverlight is our development platform for Windows Phone,” he said. Silverlight also has some “sweet spots” in media and line-of-business applications, he said.
+But when it comes to touting Silverlight as Microsoft’s vehicle for delivering a cross-platform runtime, “our strategy has shifted,” Muglia told me.
+via Microsoft: Our strategy with Silverlight has shifted | ZDNet.
+I think it is time to move away from the Microsoft platform. I&rsquo;m getting tired of having to learn a new framework every year just to keep up with their changes.
+    </div>
+    <a href="/2010/10/re-microsoft-our-strategy-with.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2010/10/asynchronous-programming-in-c.html" class="link black dim">
+        Asynchronous Programming in C#
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Making Asynchronous Programming Easy
+Asynchronous Programming in C#
+public async void AsyncIntroParallel() { Task&lt;string&gt; page1 = new WebClient() .DownloadStringTaskAsync(new Uri(&#34;http://www.weather.gov&#34;)); Task&lt;string&gt; page2 = new WebClient() .DownloadStringTaskAsync(new Uri(&#34;http://www.weather.gov/climate/&#34;)); Task&lt;string&gt; page3 = new WebClient() .DownloadStringTaskAsync(new Uri(&#34;http://www.weather.gov/rss/&#34;)); WriteLinePageTitle(await page1); WriteLinePageTitle(await page2); WriteLinePageTitle(await page3); } Async CTP has been released. Note: This is not automatically Multi-Threading! From the CTP:
+Merely sticking the &ldquo;Async&rdquo; modifier will not make a method run on the
+background thread. That is correct and by design.
+    </div>
+    <a href="/2010/10/asynchronous-programming-in-c.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2010/10/when-does-hosting-your-website-in-cloud.html" class="link black dim">
+        When Does Hosting Your Website in the Cloud Make Sense?
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      When Does Hosting Your Website in the Cloud Make Sense?.
+Discussion of when to use cloud vs own metal. Short answer:
+When you need that extra boost in bandwidth due to being slammed with requests. Basically don&rsquo;t just jump to the cloud because it is &lsquo;cool&rsquo;, use the cloud if it saves you money.
+    </div>
+    <a href="/2010/10/when-does-hosting-your-website-in-cloud.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2010/10/threading-autoresetevent-example.html" class="link black dim">
+        Threading AutoResetEvent Example
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      public class Program { private static System.Threading.AutoResetEvent stopFlag = new System.Threading.AutoResetEvent(false); public static void Main() { ServiceHost svh = new ServiceHost(typeof(ServiceImplementation)); svh.AddServiceEndpoint( typeof(WCFSimple.Contract.IService), new NetTcpBinding(), &#34;net.tcp://localhost:8000&#34;); svh.Open(); Console.WriteLine(&#34;SERVER - Running...&#34;); stopFlag.WaitOne(); Console.WriteLine(&#34;SERVER - Shutting down...&#34;); svh.Close(); Console.WriteLine(&#34;SERVER - Shut down!&#34;); } public static void Stop() { stopFlag.Set(); } } 
+    </div>
+    <a href="/2010/10/threading-autoresetevent-example.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2010/10/uow-filehelpers.html" class="link black dim">
+        UOW: FileHelpers
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      The utility of the week is FileHelpers, a .Net library that works with delimited and fixed length files. It helps to import and export data from files, strings or streams.
+I found this recently as I needed to process several CSV files but I did not want to write by hand a parser. Been there, done that way too many times so I did a search and what do you know- someone smarter than me already did it.
+    </div>
+    <a href="/2010/10/uow-filehelpers.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/posts/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/3/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/13/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul></article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://example.org/" >
+    &copy;  Hugo Quick Start Site 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

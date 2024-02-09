@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Hugo Quick Start Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.121.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+    
+      <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="Hugo Quick Start Site" />
+      <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="Hugo Quick Start Site" />
+      
+    
+
+    
+      <link rel="canonical" href="https://example.org/posts/">
+    
+
+    <meta property="og:title" content="Posts" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://example.org/posts/" />
+
+<meta itemprop="name" content="Posts">
+<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content=""/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Hugo Quick Start Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          Posts
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2009/02/dataset-more-reasons-to-not-like-it.html" class="link black dim">
+        DataSet: More reasons to not like it
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      So I am still living in the world of DataSets, when will I ever learn?
+The task was simple, take the contents of DataSetA and merge it into DataSetB. Sure, just use:
+DataSetA.Merge(DataSetB, true) and life will be good. But wait! Why is it when I try to save the merged data from DataSetB to the database it doesn&rsquo;t show up?
+Because the RowState of all the rows in all the tables are set to Unchanged!
+    </div>
+    <a href="/2009/02/dataset-more-reasons-to-not-like-it.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2009/01/using-idataerrorinfo-for-validation.html" class="link black dim">
+        Using IDataErrorInfo for Validation
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I read an article on CodeProject titled Total View Validation where the author complains that IDataErrorInfo is inadequate for WPF validation. The assumption he makes is that all the validation code needs to go into the IDataErrorInfo.this[string] property as such:
+public string this[string name] { get { string result = null; if (name == &#34;Age&#34;) if (this.age &lt; 0 || this.age &gt; 150) result = &#34;Age must not be less than 0 or greater than 150.
+    </div>
+    <a href="/2009/01/using-idataerrorinfo-for-validation.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2009/01/y2k38.html" class="link black dim">
+        Y2K38
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Eight seconds past 3:14 a.m., on January 19, 2038, most computers in the world will think it’s actually a quarter to 9 p.m. on December 13, 1901.
+Oh Crap.
+UPDATE: At 11:31:30 pm UTC on Feb 13, 2009, Unix time will reach 1,234,567,890.
+    </div>
+    <a href="/2009/01/y2k38.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2008/05/changing-typed-dataset-connection-string.html" class="link black dim">
+        Changing Typed DataSet Connection String
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I was working on a WinForm app that connected to a MS Access database. Yeah, Access sucks but I didn&rsquo;t have a choice in the matter.
+The app itself is used to import a bunch of CSV files into the Access database. It is more of a utility program and it has going through several variations, from being a simple hand driven command line tool to being GUI driven.
+The command line version was all hand controlled.
+    </div>
+    <a href="/2008/05/changing-typed-dataset-connection-string.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2008/02/datasets-love-em-hate-em.html" class="link black dim">
+        DataSets - Love em Hate em
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I have a love-hate relationship with DataSets. On the one hand they are easy to use and contain lots of built in functionality. On the other hand they are abused by almost everyone but at the same time severely under utilized, meaning that I rarely see anyone use most of the features available.
+I get the feeling that the majority of developers that use DataSets have blinders on: DataSets are only useful for reading and writing data to the database.
+    </div>
+    <a href="/2008/02/datasets-love-em-hate-em.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2008/02/value-objects-as-measurement-objects.html" class="link black dim">
+        Value Objects as Measurement Objects
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      So I was reviewing PEAA looking to see if Fowler had come up with the idea of Measurment Objects, that horse I&rsquo;ve been kicking around lately. I found that he has a couple of close patterns: Value Object and Money.
+Value Object: A small simple object, like money or a date range, whose equality isn&rsquo;t based on identity.
+Money: Represents a monetary value.
+According to Fowler Value Objects are light weight and almost primative types.
+    </div>
+    <a href="/2008/02/value-objects-as-measurement-objects.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2008/02/measurement-objects.html" class="link black dim">
+        Measurement Objects
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      In my previous post I described setting up a database to track measurements. I ran into problems quickly with the data model and I could see that it was going to become a convoluted mess pretty quick. So I want to take a step back and look at it from an application point of view.
+What I want is a way to track an objects measurements. I need a system that is easy to understand, any one looking at an object should readily understand what each measurement property is and what units it is in.
+    </div>
+    <a href="/2008/02/measurement-objects.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2008/01/databases-suck.html" class="link black dim">
+        Databases Suck
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I am sick of working with databases, they all suck. I can generalize this to any type of data store, they all suck.
+OK, they don&rsquo;t really suck but I sure have seen a lot of database designs that do. I am tired of working with applications that have lots and lots of large tables, tables with lots and lots of fields. Of course all the fields but the primary key are nullable because you might not always need that extra address field but it is there, just in case.
+    </div>
+    <a href="/2008/01/databases-suck.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2008/01/need-tape.html" class="link black dim">
+        Need Tape
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Those are the words spoken to me by my son. He was playing with his GI Joe (one of the fake all plastic ones) when he accidentally pulled off its head. Oops!
+This sucks because now I have to retape the head on evy time it falls off.
+Of course the real GI Joe&rsquo;s head wouldn&rsquo;t have come off so easy. Growing up we used to regularly abuse them by dropping them off of roofs, blowing them up with fire works, running them over with the car, etc.
+    </div>
+    <a href="/2008/01/need-tape.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/2007/10/excelpackage.html" class="link black dim">
+        ExcelPackage
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I&rsquo;ve been reviewing the ExcelPackage project on CodePlex. It is a useful project but one thing I was wondering is why does it directly interact with the XML?
+I think it is a performance and a code maintenance hit to work directly with the XML for the workbook and worksheets. In my oh so humble opinion I think it would be easier to create plain old C# objects to work with the cells, rows, sheets, etc.
+    </div>
+    <a href="/2007/10/excelpackage.html" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/posts/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/3/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 4" class="page-link" role="button">4</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/6/" aria-label="Page 6" class="page-link" role="button">6</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/5/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/13/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul></article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://example.org/" >
+    &copy;  Hugo Quick Start Site 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

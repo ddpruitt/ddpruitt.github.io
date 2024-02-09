@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rant on Hugo Quick Start Site</title>
+    <link>https://example.org/tags/rant/</link>
+    <description>Recent content in Rant on Hugo Quick Start Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Oct 2010 00:59:00 -0700</lastBuildDate>
+    <atom:link href="https://example.org/tags/rant/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RE:Why is Microsoft suddenly so hot for HTML5? | Betanews</title>
+      <link>https://example.org/2010/10/rewhy-is-microsoft-suddenly-so-hot-for.html</link>
+      <pubDate>Sat, 30 Oct 2010 00:59:00 -0700</pubDate>
+      <guid>https://example.org/2010/10/rewhy-is-microsoft-suddenly-so-hot-for.html</guid>
+      <description>Last week, Gartner predicted that mobile would be a trillion-dollar industry by 2014. It&amp;rsquo;s a market Microsoft doesn&amp;rsquo;t want to be shut out of.&#xA;via Why is Microsoft suddenly so hot for HTML5? | Betanews.&#xA;This and my earlier post reinforce my belief that it is time to break the chains of Microsoft. Meaning it is time for me to stop being a Mort.</description>
+    </item>
+    <item>
+      <title>RE: Microsoft: Our strategy with Silverlight has shifted | ZDNet</title>
+      <link>https://example.org/2010/10/re-microsoft-our-strategy-with.html</link>
+      <pubDate>Fri, 29 Oct 2010 06:56:00 -0700</pubDate>
+      <guid>https://example.org/2010/10/re-microsoft-our-strategy-with.html</guid>
+      <description>“Silverlight is our development platform for Windows Phone,” he said. Silverlight also has some “sweet spots” in media and line-of-business applications, he said.&#xA;But when it comes to touting Silverlight as Microsoft’s vehicle for delivering a cross-platform runtime, “our strategy has shifted,” Muglia told me.&#xA;via Microsoft: Our strategy with Silverlight has shifted | ZDNet.&#xA;I think it is time to move away from the Microsoft platform. I&amp;rsquo;m getting tired of having to learn a new framework every year just to keep up with their changes.</description>
+    </item>
+    <item>
+      <title>DataSet: More reasons to not like it</title>
+      <link>https://example.org/2009/02/dataset-more-reasons-to-not-like-it.html</link>
+      <pubDate>Wed, 25 Feb 2009 07:35:00 -0800</pubDate>
+      <guid>https://example.org/2009/02/dataset-more-reasons-to-not-like-it.html</guid>
+      <description>So I am still living in the world of DataSets, when will I ever learn?&#xA;The task was simple, take the contents of DataSetA and merge it into DataSetB. Sure, just use:&#xA;DataSetA.Merge(DataSetB, true) and life will be good. But wait! Why is it when I try to save the merged data from DataSetB to the database it doesn&amp;rsquo;t show up?&#xA;Because the RowState of all the rows in all the tables are set to Unchanged!</description>
+    </item>
+    <item>
+      <title>Using IDataErrorInfo for Validation</title>
+      <link>https://example.org/2009/01/using-idataerrorinfo-for-validation.html</link>
+      <pubDate>Wed, 28 Jan 2009 10:10:00 -0800</pubDate>
+      <guid>https://example.org/2009/01/using-idataerrorinfo-for-validation.html</guid>
+      <description>I read an article on CodeProject titled Total View Validation where the author complains that IDataErrorInfo is inadequate for WPF validation. The assumption he makes is that all the validation code needs to go into the IDataErrorInfo.this[string] property as such:&#xA;public string this[string name] { get { string result = null; if (name == &amp;#34;Age&amp;#34;) if (this.age &amp;lt; 0 || this.age &amp;gt; 150) result = &amp;#34;Age must not be less than 0 or greater than 150.</description>
+    </item>
+    <item>
+      <title>DataSets - Love em Hate em</title>
+      <link>https://example.org/2008/02/datasets-love-em-hate-em.html</link>
+      <pubDate>Sat, 09 Feb 2008 19:12:00 -0800</pubDate>
+      <guid>https://example.org/2008/02/datasets-love-em-hate-em.html</guid>
+      <description>I have a love-hate relationship with DataSets. On the one hand they are easy to use and contain lots of built in functionality. On the other hand they are abused by almost everyone but at the same time severely under utilized, meaning that I rarely see anyone use most of the features available.&#xA;I get the feeling that the majority of developers that use DataSets have blinders on: DataSets are only useful for reading and writing data to the database.</description>
+    </item>
+    <item>
+      <title>Crappy Apps</title>
+      <link>https://example.org/2007/10/crappy-apps.html</link>
+      <pubDate>Wed, 10 Oct 2007 04:39:00 -0700</pubDate>
+      <guid>https://example.org/2007/10/crappy-apps.html</guid>
+      <description>Why is it that so many crappy apps are out there in the wild?&#xA;Is it because of the visual tools available in the .Net realm that generate so much crap that the average programmer just does not have time to clean it up? Or are the developers just too lazy to clean up the mess as they go?</description>
+    </item>
+    <item>
+      <title>Chevy Vega vs. TestDriven.Net</title>
+      <link>https://example.org/2007/06/chevy-vega-vs-testdrivennet.html</link>
+      <pubDate>Thu, 07 Jun 2007 15:23:00 -0700</pubDate>
+      <guid>https://example.org/2007/06/chevy-vega-vs-testdrivennet.html</guid>
+      <description>My Dad originally made a living as an auto machinic and working on cars is still his favorite pass time. Besides working on cars my Dad liked to swap cars. Swap cars, car parts, you name it he would swap it. The benefit of that to me was that I was exposed (read - drove) to a lot of different cars, some clunkers some not.&#xA;One of the cars he swapped for was a Chevy Vega with a 327 small block V8 in it.</description>
+    </item>
+    <item>
+      <title>Comments for a Code Review</title>
+      <link>https://example.org/2006/12/comments-for-code-review.html</link>
+      <pubDate>Thu, 14 Dec 2006 14:34:00 -0800</pubDate>
+      <guid>https://example.org/2006/12/comments-for-code-review.html</guid>
+      <description>Ok, what kind of ass-hat idiotic thing is this?&#xA;Source: GIT PATCH more Driver core patches for 2.6.19&#xA;That has got to be one of the funniest things I&amp;rsquo;ve read in a long time. Well, at least in the last 24 hrs.</description>
+    </item>
+    <item>
+      <title>What&amp;#39;s in a Name?</title>
+      <link>https://example.org/2006/11/what-in-name.html</link>
+      <pubDate>Wed, 08 Nov 2006 11:53:00 -0800</pubDate>
+      <guid>https://example.org/2006/11/what-in-name.html</guid>
+      <description>I have had the joy of reviewing other peoples code lately and I must say that for the most part there is a total lack of attention to detail. Extensive use of copy paste coding, but the one thing that bugs me the most is the naming convention used.&#xA;Can you believe that there are still developers that preface there variables with obj?! Is that not just crazy? Of course it is an object, we work in an OOP language.</description>
+    </item>
+    <item>
+      <title>Mad World</title>
+      <link>https://example.org/2006/11/mad-world.html</link>
+      <pubDate>Sun, 05 Nov 2006 06:45:00 -0800</pubDate>
+      <guid>https://example.org/2006/11/mad-world.html</guid>
+      <description>I keep seeing the commercial for Gears of War, I don&amp;rsquo;t know anything about the game but the background music is one that I know and like. It is called &amp;ldquo;Mad World&amp;rdquo; and I recognize it from the movie Donny Darko. Part of it goes like this:&#xA;I find it kind of funny,&#xA;I find it kind of sad,&#xA;But the dreams in which I&amp;rsquo;m dying&#xA;Are the best I ever had.</description>
+    </item>
+    <item>
+      <title>Say What?</title>
+      <link>https://example.org/2006/11/say-what.html</link>
+      <pubDate>Wed, 01 Nov 2006 04:15:00 -0800</pubDate>
+      <guid>https://example.org/2006/11/say-what.html</guid>
+      <description>There are a lot more airplanes at the bottom of the ocean than there are submarines in the sky.&#xA;What does that mean? Who knows but it sounds good.</description>
+    </item>
+    <item>
+      <title>Cisco VPN Sucks</title>
+      <link>https://example.org/2006/09/cisco-vpn-sucks.html</link>
+      <pubDate>Sat, 30 Sep 2006 02:36:00 -0700</pubDate>
+      <guid>https://example.org/2006/09/cisco-vpn-sucks.html</guid>
+      <description>I have to use the Cisco VPN Client at work and man when it breaks it breaks good! For some reason it has decided to stop working which means I can’t work at home. Now I have to spend my Saturday morning in the office. CRAP!&#xA;I’ve been looking for an alternative but can’t seem to find one. If anyone knows of a good alternative please let me know.</description>
+    </item>
+    <item>
+      <title>Outlook Rules &#43; Blackberry == SUCKS</title>
+      <link>https://example.org/2006/09/outlook-rules-blackberry-sucks.html</link>
+      <pubDate>Thu, 07 Sep 2006 03:01:00 -0700</pubDate>
+      <guid>https://example.org/2006/09/outlook-rules-blackberry-sucks.html</guid>
+      <description>I just got a Blackberry for work and am having a hard time dealing with it. I didn’t ask for it but if I have to use it I will. The real problem I am having is the clash of Outlook rules and my use of folders to organize email&amp;rsquo;s. Because the email&amp;rsquo;s I get are moved into a folder (me being the anal organizational type) they do not get forwarded to the Blackberry.</description>
+    </item>
+    <item>
+      <title>Hanselminutes - Not Franklinminutes</title>
+      <link>https://example.org/2006/08/hanselminutes-not-franklinminutes.html</link>
+      <pubDate>Mon, 28 Aug 2006 13:57:00 -0700</pubDate>
+      <guid>https://example.org/2006/08/hanselminutes-not-franklinminutes.html</guid>
+      <description>I like listening to Scott Hanselmin on Hanselminutes. I first noticed Scott while listening to .Net Rocks, the Podcast that was around before the term Podcast. Scott always knows all the cool tools, the most informative websites and alternative ways (read: Not .NET) ways of doing things. His show is great.&#xA;But then there is Carl. Let’s not forget that Hanselminutes is Hosted by Carl Franklin. Carl sounds like the Java guy I work with; every time Scott brings up something that is not Microsoft or .</description>
+    </item>
+    <item>
+      <title>Programming with Interfaces</title>
+      <link>https://example.org/2006/08/programming-with-interfaces.html</link>
+      <pubDate>Mon, 21 Aug 2006 03:30:00 -0700</pubDate>
+      <guid>https://example.org/2006/08/programming-with-interfaces.html</guid>
+      <description>Today I was told that:&#xA;In general, interfaces should be used sparingly as they add unneeded complexity when applied to a simple set of objects.&#xA;I don’t get it, I thought interfaces were a Good Thing. I must be missing something….</description>
+    </item>
+    <item>
+      <title>Resharper vs CodeRush</title>
+      <link>https://example.org/2006/06/resharper-vs-coderush.html</link>
+      <pubDate>Sat, 10 Jun 2006 20:48:00 -0700</pubDate>
+      <guid>https://example.org/2006/06/resharper-vs-coderush.html</guid>
+      <description>So I used Resharper for a long time and I really liked it. There were a few things I didn’t like, especially the time added to a project load. And every once in a while it would lock up. But the features I liked were very useful: Find all usages, simple keyboard shortcuts, code reformatting. But the two most useful things it did was 1) to but a bar along the right side of the screen with orange or red lines for were the code had problems, and 2) clean up the using statements.</description>
+    </item>
+    <item>
+      <title>Public Education - Where Should the Money Go?</title>
+      <link>https://example.org/2006/03/public-education-where-should-money-go.html</link>
+      <pubDate>Thu, 30 Mar 2006 06:25:00 -0800</pubDate>
+      <guid>https://example.org/2006/03/public-education-where-should-money-go.html</guid>
+      <description>Why should the government be responsible for paying for my kids education? After all, he is my kid so why should local, state, or federal tax money go to improve his education?&#xA;Because the USA will benefit from my son being educated. The State (meaning local, state and federal governments) will benefit by my son making more money, which means he will spend more, so in both cases he will contribute to the economy and the tax base.</description>
+    </item>
+    <item>
+      <title>Ben Stein Smacks Hollywood</title>
+      <link>https://example.org/2006/03/ben-stein-smacks-hollywood.html</link>
+      <pubDate>Tue, 28 Mar 2006 15:04:00 -0800</pubDate>
+      <guid>https://example.org/2006/03/ben-stein-smacks-hollywood.html</guid>
+      <description>Missed Tributes.&#xA;Ben Stein, author, lawyer and actor, shares some thoughts on the Oscars. He also points out how hollow the Hollywood Elites are in the face of real world crises.</description>
+    </item>
+    <item>
+      <title>My First WTF Experiance</title>
+      <link>https://example.org/2006/03/my-first-wtf-experiance.html</link>
+      <pubDate>Wed, 15 Mar 2006 09:18:00 -0800</pubDate>
+      <guid>https://example.org/2006/03/my-first-wtf-experiance.html</guid>
+      <description>OK, so I have seen bad code in the past. Hell, I’ve written some pretty bad code in the past, present and will in the future. But what I am looking at right now just blows my freaking mind.&#xA;A stored procedure that generates dynamic SQL to parse an XML document stored in a table which then somehow drives a cursor to fetch one row from something the dynamic sql calls that then drives another cursor that uses OPENXML to get data from another xml document.</description>
+    </item>
+    <item>
+      <title>Doomed</title>
+      <link>https://example.org/2005/10/doomed.html</link>
+      <pubDate>Fri, 21 Oct 2005 08:10:00 -0700</pubDate>
+      <guid>https://example.org/2005/10/doomed.html</guid>
+      <description>Those Who Ignore Standards Are Doomed to Reinvent Them The most Prophetic words I have ever heard.&#xA;This has come into play several times where I work and where I have worked. It boils down to each developer thinking his set of Standards is better then my set of Standards.&#xA;The others should just face reality: I know best so do it my way. </description>
+    </item>
+    <item>
+      <title>Katrina Response, Day x</title>
+      <link>https://example.org/2005/10/katrina-response-day-x.html</link>
+      <pubDate>Thu, 06 Oct 2005 13:53:00 -0700</pubDate>
+      <guid>https://example.org/2005/10/katrina-response-day-x.html</guid>
+      <description>I am back in Dallas working at the EPA RRC, assisting with the data management for the Hurricane Katrina and Rita response. It is not something I want to do since I am having to use MS Access.&#xA;My loathing for MS Access is growing on a hourly basis. I feel like an amateur doing mundane BS all the while dreaming of building an Eiffel Tower. One day….&#xA;There is desertion among the ranks and the captions are unaware…….</description>
+    </item>
+    <item>
+      <title>The Kindly Ones They Ain&amp;#39;t</title>
+      <link>https://example.org/2005/08/the-kindly-ones-they-ain.html</link>
+      <pubDate>Wed, 10 Aug 2005 07:28:00 -0700</pubDate>
+      <guid>https://example.org/2005/08/the-kindly-ones-they-ain.html</guid>
+      <description>I finished reading Sandman #9, The Kindly Ones. This was a very complicated Sandman, and for the Sandman saga that is saying something. Almost all the old characters returned and a lot of loose threads were tied or cut. Then Neil killed Dream.&#xA;I thought, how inappropriate. I didn’t think he would actually kill him, just make him wipe out the furies. But no, Dream goes bye-bye.&#xA;This was actually foreshadowed in the previous Sandman, with the storm and the funeral march.</description>
+    </item>
+    <item>
+      <title>if we got this far, then everything is working properly</title>
+      <link>https://example.org/2005/08/if-we-got-this-far-then-everything-is.html</link>
+      <pubDate>Thu, 04 Aug 2005 12:14:00 -0700</pubDate>
+      <guid>https://example.org/2005/08/if-we-got-this-far-then-everything-is.html</guid>
+      <description>Comment found in a code that I was reviewing:&#xA;if we got this far, then everything is working properly&#xA;Why does this send shivers up my spine? The procedure is 91 lines long and this comment appears on line 43. What about the other 48 lines? What if they fail? I should add the following comment to the end of the procedure:&#xA;if we got this far then there is a God.</description>
+    </item>
+    <item>
+      <title>O&amp;#39;Reilly Network Weblogs: Everything I Know about Programming</title>
+      <link>https://example.org/2005/07/o-network-weblogs-everything-i-know.html</link>
+      <pubDate>Wed, 20 Jul 2005 06:08:00 -0700</pubDate>
+      <guid>https://example.org/2005/07/o-network-weblogs-everything-i-know.html</guid>
+      <description>Christopher Diggins list the three things he’s learned in 20 years of programming:&#xA;1. Your code will change&#xA;2. No matter how simple you think your code is, it is complete nonsense to almost everyone else.&#xA;3. If you haven&amp;rsquo;t tested your code then it&amp;rsquo;s probably wrong.&#xA;O&amp;rsquo;Reilly Network Weblogs: Everything I Know about Programming</description>
+    </item>
+    <item>
+      <title>State Machine</title>
+      <link>https://example.org/2004/12/state-machine.html</link>
+      <pubDate>Fri, 03 Dec 2004 04:47:00 -0800</pubDate>
+      <guid>https://example.org/2004/12/state-machine.html</guid>
+      <description>I have been working with the State Pattern for several months now. It is a great way to control an application in a Kung Fu sort of way. It has a very hands off director feel to it.&#xA;I am planning on writing up a full doc on my take on the pattern and an implementation of it, based off of the MyXaml MxStateMachine. I like the looks of MyXaml but it seems too declarative for me.</description>
+    </item>
+    <item>
+      <title>World of Warcraft</title>
+      <link>https://example.org/2004/11/world-of-warcraft.html</link>
+      <pubDate>Fri, 19 Nov 2004 06:14:00 -0800</pubDate>
+      <guid>https://example.org/2004/11/world-of-warcraft.html</guid>
+      <description>Blizzard Entertainment - World of Warcraft I have been waiting for over three years for WOW to come out. Is it worth the wait? Am I going to rush and play it? Should I? After all these years are online dungeons even relevant?&#xA;UPDATE: My wife bought me the game for Christmas, but she said I can&amp;rsquo;t open it until Christmas! But we are going to Flint, MI for Christmas so I won&amp;rsquo;t be able to play it until New Years Eve, when we get back.</description>
+    </item>
+    <item>
+      <title>Closer</title>
+      <link>https://example.org/2004/11/closer.html</link>
+      <pubDate>Fri, 12 Nov 2004 13:41:00 -0800</pubDate>
+      <guid>https://example.org/2004/11/closer.html</guid>
+      <description>Scott Peterson is found guilty. Finally, maybe this will become a non-issue now. I&amp;rsquo;m sick of hearing about this case, Who Cares! There are far worse atrocities going on in the world, who cares about this cheap ass punk?&#xA;Arafat is dead. Finally! He did nothing but cause problems. Maybe now the Palestinians can get some solid leadership.&#xA;The election is a solid win.&#xA;What ever are the reporters going to harp on now?</description>
+    </item>
+    <item>
+      <title>Hey Man, so long as it works that is all that matters...</title>
+      <link>https://example.org/2004/07/hey-man-so-long-as-it-works-that-is-all.html</link>
+      <pubDate>Wed, 28 Jul 2004 12:40:00 -0700</pubDate>
+      <guid>https://example.org/2004/07/hey-man-so-long-as-it-works-that-is-all.html</guid>
+      <description>So says my bossman at least. And such is the attitude of a lot of programmers.&#xA;But it is not All That Matters. It is a side affect of doing things right and an accident when you do things wrong. There is more to building software, lots more, and it is unfortunate that some people will never see beyond the short sided goals of &amp;ldquo;Making it Work.&amp;rdquo;&#xA;It kills me to here people I work with say that.</description>
+    </item>
+    <item>
+      <title>Secure in Capatilism</title>
+      <link>https://example.org/2004/02/secure-in-capatilism.html</link>
+      <pubDate>Fri, 27 Feb 2004 09:28:00 -0800</pubDate>
+      <guid>https://example.org/2004/02/secure-in-capatilism.html</guid>
+      <description>I know that no socialistic form of government will ever last very long. I know this because, no matter how good the intentions some one will always take advantage of the system. There will always be some one to take advantage of some one elses generosity. How do I know this? Because of the Coffee Leaches!&#xA;We have a pretty nice coffee bar in our office. We have fresh beans, good quality beans, and a grinder.</description>
+    </item>
+    <item>
+      <title>Learning the Three R&amp;#39;s</title>
+      <link>https://example.org/2004/02/learning-three-r.html</link>
+      <pubDate>Fri, 13 Feb 2004 18:16:00 -0800</pubDate>
+      <guid>https://example.org/2004/02/learning-three-r.html</guid>
+      <description>Respectful - Of your parents&#xA;Resourceful - Think for yourself&#xA;Responsible - Be a man, take the blame</description>
+    </item>
+    <item>
+      <title>Chasing the Technology</title>
+      <link>https://example.org/2004/02/chasing-technology.html</link>
+      <pubDate>Thu, 12 Feb 2004 14:52:00 -0800</pubDate>
+      <guid>https://example.org/2004/02/chasing-technology.html</guid>
+      <description>A big problem I have with people who consider themselves programmers is that they spend most of their time chasing the technology. They spend more time whack-a-mole code hacking and no time trying to learn the basics, like source control, methodologies or algorithms.&#xA;I personally lack in these areas because I do not come from a Computer Science background, but I strive to overcome this. My favorite computer books deal with ways of thinking about and doing programming, not just code cookbooks.</description>
+    </item>
+  </channel>
+</rss>
