@@ -2,17 +2,16 @@
 title: 'Remote Controlled RoboTank'
 date: 2013-08-15T05:02:00.002-07:00
 draft: false
-url: /2013/08/remote-controlled-robotank_99.html
 tags: 
 - Arduino
 ---
 
-[![RoboTank and Gamepad](https://dl.dropboxusercontent.com/u/480457/techshorts/2013/08/_d_improd_/TankAndController01_f_improf_672x400.jpg)](/wp-content/uploads/2013/08/TankAndController01.jpg)  
+[![RoboTank and Gamepad](./TankAndController01.jpg)](./TankAndController01.jpg)  
   
 This is my version of the ever popular to build RoboTank. It uses an Arduino Mega 2560 with the AdaFruit motor shield and an XBee S1 to communicate to the DFRobot Gamepad. The sketch for the RoboTank makes use of the AFMotor.h to drive the motors and includes a serial parser to read and process the commands coming from the Gamepad.  
   
-[Robotank-Sketch.zip](./wp-content/uploads/2013/08/RoboTank-Sketch.zip)  
-[DFRobot Wireless Joystick](./2013/08/dfrobot-wireless-joystick-1-1-dfr0182/ "DFRobot Wireless Joystick 1.1 (DFR0182)")  
+[Robotank-Sketch.zip](./RoboTank-Sketch.zip)  
+[DFRobot Wireless Joystick](./DFR0182.jpg "DFRobot Wireless Joystick 1.1 (DFR0182)") (EDIT: Discontinued)
   
   
   
@@ -21,7 +20,7 @@ This is my version of the ever popular to build RoboTank. It uses an Arduino Meg
 | ---- | ---- | ---- | ---- | ---- | ---- |
 | DFRduino Mega 2560 (Arduino Mega Compatible) | DFR0127 | DFRobot | $35.00 | 1 | $35.00 |
 | Mega IO Expansion Shield V2.1 For Arduino Mega | DFR0165 | DFRobot | $19.50 | 1 | $19.50 |
-| [Wireless GamePad for Arduino](/2013/08/dfrobot-wireless-joystick-1-1-dfr0182) | DFR0182 | DFR0182 | $57.50 | 1 | $57.50 |
+| [Wireless GamePad for Arduino](./dfrobot-wireless-joystick-1-1-dfr0182) | DFR0182 | DFR0182 | $57.50 | 1 | $57.50 |
 | USB Serial Light Adapter (Arduino Compatible) | DFR0164 | DFRobot | $12.50 | 1 | $12.50 |
 | XBee 1mW Wire Antenna (S1) | TEL0014 | DFRobot | $23.50 | 2 | $47.00 |
 | XBee Explorer USB | WRL-08687 | SparkFun | $24.95 | 2 | $49.90 |
@@ -31,21 +30,21 @@ This is my version of the ever popular to build RoboTank. It uses an Arduino Meg
 | Tamiya 70168 Double Gearbox L/R Independ 4-Speed |  | Amazon | $8.80 | 1 | $8.80 |
   
   
-[![RoboTank Arduino](https://dl.dropboxusercontent.com/u/480457/techshorts/2013/08/_d_improd_/TankArduino01_f_improf_665x525.jpg)](/wp-content/uploads/2013/08/TankArduino01.jpg)  
+[![RoboTank Arduino](./TankArduino01.jpg)](./TankArduino01.jpg)  
   
-The Arduino is powered by a 9V battery floating under the top plate and the motors are powered by a four cell "AA" battery pack velcroed to the bottom behind the motors. Separating the power like this is important as the current draw by the motors could impact the performance of the Arduino. If both the motors and the Arduino used the same power supply you would see sporadic bugs and difficult to trace issues with your code, so you would think. So remember: Separation of Powers.  
+The Arduino is powered by a 9V battery floating under the top plate and the motors are powered by a four cell "AA" battery pack velcro'ed to the bottom behind the motors. Separating the power like this is important as the current draw by the motors could impact the performance of the Arduino. If both the motors and the Arduino used the same power supply you would see sporadic bugs and difficult to trace issues with your code, so you would think. So remember: Separation of Powers.  
   
 The switch is used to turn on and off the power to the motors. Unplugging the 9V battery turns off the Arduino.  
   
-[![RoboTank Arduino](https://dl.dropboxusercontent.com/u/480457/techshorts/2013/08/_d_improd_/TankArduino02_f_improf_661x322.jpg)](/wp-content/uploads/2013/08/TankArduino02.jpg)  
+[![RoboTank Arduino](./TankArduino02.jpg)](./TankArduino02.jpg)  
   
 The [Mega IO Expansion Shield](http://www.dfrobot.com/wiki/index.php/Mega_IO_Expansion_Shield_V2(SKU:DFR0165)) was used for the same reason I used the Mega 2560 Arduino: I had them. The Mega 2560 has three serial IO's which allowed for the XBee to be installed on Serial1 and still monitor Serial when programming the sketch.  
   
-[![Mega IO Expansion Shield](https://dl.dropboxusercontent.com/u/480457/techshorts/2013/08/_d_improd_/dfrobot-mega-io-shield_f_improf_352x352.jpg)](/wp-content/uploads/2013/08/dfrobot-mega-io-shield.jpg)  
+[![Mega IO Expansion Shield](./dfrobot-mega-io-shield.jpg)](./dfrobot-mega-io-shield.jpg)  
   
 The [Adafruit motor shield](http://learn.adafruit.com/adafruit-motor-shield) was used since it is the most popular.  
   
-[![Adafruit Motor Shield](https://dl.dropboxusercontent.com/u/480457/techshorts/2013/08/_d_improd_/adafruit-motor-shield_f_improf_476x357.jpg)](/wp-content/uploads/2013/08/adafruit-motor-shield.jpg)  
+[![Adafruit Motor Shield](./adafruit-motor-shield.jpg)](./adafruit-motor-shield.jpg)  
   
 For the Serial communication I borrowed heavily from [Serial Comm Fundamentals on Arduino](http://jhaskellsblog.blogspot.com.ar/2011/05/serial-comm-fundamentals-on-arduino.html). Borrowed heavily means "liberally used" his serial code.  
   
