@@ -1,4 +1,4 @@
 baseURL = 'https://ddpruitt.github.io/'
 languageCode = 'en-us'
 title = 'TechShorts'
-theme = 'ananke'
+theme = 'triple-hyde'
