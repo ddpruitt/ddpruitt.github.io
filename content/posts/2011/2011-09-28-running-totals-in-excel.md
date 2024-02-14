@@ -2,7 +2,7 @@
 title: 'Running Totals in Excel'
 date: 2011-09-28T02:40:00.002-07:00
 draft: false
-url: /2011/09/running-totals-in-excel_39.html
+xurlx: /2011/09/running-totals-in-excel_39.html
 tags: 
 - MS Office
 - MS Excel

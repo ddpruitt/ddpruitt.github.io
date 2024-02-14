@@ -2,7 +2,7 @@
 title: 'YouTube - The future of TV'
 date: 2006-08-19T06:48:00.000-07:00
 draft: false
-url: /2006/08/youtube-future-of-tv.html
+xurlx: /2006/08/youtube-future-of-tv.html
 tags: 
 - General
 ---

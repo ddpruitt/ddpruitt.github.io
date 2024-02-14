@@ -2,7 +2,7 @@
 title: 'When Does Hosting Your Website in the Cloud Make Sense?'
 date: 2010-10-29T04:41:00.000-07:00
 draft: false
-url: /2010/10/when-does-hosting-your-website-in-cloud.html
+xurlx: /2010/10/when-does-hosting-your-website-in-cloud.html
 tags: 
 - Cloud
 ---

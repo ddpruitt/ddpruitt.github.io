@@ -2,7 +2,7 @@
 title: 'Semi-XP Development'
 date: 2006-02-17T20:59:00.000-08:00
 draft: false
-url: /2006/02/semi-xp-development.html
+xurlx: /2006/02/semi-xp-development.html
 tags: 
 - .Net
 - General

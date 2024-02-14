@@ -2,7 +2,7 @@
 title: 'C# Spirograph Point Generators'
 date: 2012-03-26T01:02:00.000-07:00
 draft: false
-url: /2012/03/c-spirograph-point-generators.html
+xurlx: /2012/03/c-spirograph-point-generators.html
 tags: 
 - .Net
 - graphic

@@ -2,7 +2,7 @@
 title: 'I am Iron Man'
 date: 2006-12-30T02:03:00.000-08:00
 draft: false
-url: /2006/12/i-am-iron-man.html
+xurlx: /2006/12/i-am-iron-man.html
 tags: 
 - Personality
 ---

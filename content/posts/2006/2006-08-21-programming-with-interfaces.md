@@ -2,7 +2,7 @@
 title: 'Programming with Interfaces'
 date: 2006-08-21T03:30:00.000-07:00
 draft: false
-url: /2006/08/programming-with-interfaces.html
+xurlx: /2006/08/programming-with-interfaces.html
 tags: 
 - Rant
 ---

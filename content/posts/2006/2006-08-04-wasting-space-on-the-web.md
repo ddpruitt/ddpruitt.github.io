@@ -2,7 +2,7 @@
 title: 'Wasting Space on the Web'
 date: 2006-08-04T21:36:00.000-07:00
 draft: false
-url: /2006/08/wasting-space-on-web.html
+xurlx: /2006/08/wasting-space-on-web.html
 tags: 
 - Personality
 - General

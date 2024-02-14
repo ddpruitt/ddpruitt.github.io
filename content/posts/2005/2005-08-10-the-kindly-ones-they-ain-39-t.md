@@ -2,7 +2,7 @@
 title: 'The Kindly Ones They Ain&#39;t'
 date: 2005-08-10T07:28:00.000-07:00
 draft: false
-url: /2005/08/the-kindly-ones-they-ain.html
+xurlx: /2005/08/the-kindly-ones-they-ain.html
 tags: 
 - Rant
 - General

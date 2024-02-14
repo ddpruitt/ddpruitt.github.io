@@ -2,7 +2,7 @@
 title: 'DataSet: More reasons to not like it'
 date: 2009-02-25T07:35:00.000-08:00
 draft: false
-url: /2009/02/dataset-more-reasons-to-not-like-it.html
+xurlx: /2009/02/dataset-more-reasons-to-not-like-it.html
 tags: 
 - .Net
 - Rant

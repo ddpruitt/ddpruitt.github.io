@@ -2,7 +2,7 @@
 title: 'EntLib Data Access Block and Excel'
 date: 2007-10-10T04:39:00.001-07:00
 draft: false
-url: /2007/10/entlib-data-access-block-and-excel.html
+xurlx: /2007/10/entlib-data-access-block-and-excel.html
 tags: 
 - General
 ---

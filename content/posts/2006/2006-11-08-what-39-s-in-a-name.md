@@ -2,7 +2,7 @@
 title: 'What&#39;s in a Name?'
 date: 2006-11-08T11:53:00.000-08:00
 draft: false
-url: /2006/11/what-in-name.html
+xurlx: /2006/11/what-in-name.html
 tags: 
 - .Net
 - Rant

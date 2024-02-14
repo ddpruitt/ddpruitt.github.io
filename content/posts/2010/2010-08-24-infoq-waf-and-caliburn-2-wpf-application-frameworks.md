@@ -2,7 +2,7 @@
 title: 'InfoQ: WAF and Caliburn: 2 WPF Application Frameworks'
 date: 2010-08-24T12:25:00.000-07:00
 draft: false
-url: /2010/08/infoq-waf-and-caliburn-2-wpf.html
+xurlx: /2010/08/infoq-waf-and-caliburn-2-wpf.html
 tags: 
 - .Net
 ---

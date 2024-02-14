@@ -2,7 +2,7 @@
 title: 'My Linguistic Profile'
 date: 2005-04-28T10:58:00.000-07:00
 draft: false
-url: /2005/04/my-linguistic-profile.html
+xurlx: /2005/04/my-linguistic-profile.html
 tags: 
 - General
 ---

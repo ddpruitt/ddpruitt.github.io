@@ -2,7 +2,7 @@
 title: 'World of Warcraft'
 date: 2005-01-26T18:38:00.000-08:00
 draft: false
-url: /2005/01/world-of-warcraft.html
+xurlx: /2005/01/world-of-warcraft.html
 tags: 
 - General
 ---

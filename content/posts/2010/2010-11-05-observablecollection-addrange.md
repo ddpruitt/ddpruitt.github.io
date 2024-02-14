@@ -2,7 +2,7 @@
 title: 'ObservableCollection AddRange'
 date: 2010-11-05T07:15:00.000-07:00
 draft: false
-url: /2010/11/observablecollection-addrange.html
+xurlx: /2010/11/observablecollection-addrange.html
 tags: 
 - .Net
 ---

@@ -2,7 +2,7 @@
 title: 'Measurement Objects'
 date: 2008-02-04T14:14:00.000-08:00
 draft: false
-url: /2008/02/measurement-objects.html
+xurlx: /2008/02/measurement-objects.html
 tags: 
 - General
 ---

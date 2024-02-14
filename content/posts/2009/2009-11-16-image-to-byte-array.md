@@ -2,7 +2,7 @@
 title: 'Image to Byte Array'
 date: 2009-11-16T08:09:00.000-08:00
 draft: false
-url: /2009/11/image-to-byte-array.html
+xurlx: /2009/11/image-to-byte-array.html
 tags: 
 - .Net
 ---

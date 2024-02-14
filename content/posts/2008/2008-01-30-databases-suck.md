@@ -2,7 +2,7 @@
 title: 'Databases Suck'
 date: 2008-01-30T14:55:00.000-08:00
 draft: false
-url: /2008/01/databases-suck.html
+xurlx: /2008/01/databases-suck.html
 tags: 
 - General
 ---

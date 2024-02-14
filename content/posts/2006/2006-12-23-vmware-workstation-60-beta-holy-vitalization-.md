@@ -2,7 +2,7 @@
 title: 'VMWare Workstation 6.0 Beta - Holy Vitalization!'
 date: 2006-12-23T02:50:00.000-08:00
 draft: false
-url: /2006/12/vmware-workstation-60-beta-holy.html
+xurlx: /2006/12/vmware-workstation-60-beta-holy.html
 tags: 
 - General
 ---

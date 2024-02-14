@@ -2,7 +2,7 @@
 title: 'FxCop and NAnt'
 date: 2006-12-06T08:41:00.000-08:00
 draft: false
-url: /2006/12/fxcop-and-nant.html
+xurlx: /2006/12/fxcop-and-nant.html
 tags: 
 - General
 ---

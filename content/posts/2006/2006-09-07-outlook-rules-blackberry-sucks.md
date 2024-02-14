@@ -2,7 +2,7 @@
 title: 'Outlook Rules + Blackberry == SUCKS'
 date: 2006-09-07T03:01:00.000-07:00
 draft: false
-url: /2006/09/outlook-rules-blackberry-sucks.html
+xurlx: /2006/09/outlook-rules-blackberry-sucks.html
 tags: 
 - Rant
 ---

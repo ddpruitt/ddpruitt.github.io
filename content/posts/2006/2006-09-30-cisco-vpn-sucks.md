@@ -2,7 +2,7 @@
 title: 'Cisco VPN Sucks'
 date: 2006-09-30T02:36:00.000-07:00
 draft: false
-url: /2006/09/cisco-vpn-sucks.html
+xurlx: /2006/09/cisco-vpn-sucks.html
 tags: 
 - Rant
 ---

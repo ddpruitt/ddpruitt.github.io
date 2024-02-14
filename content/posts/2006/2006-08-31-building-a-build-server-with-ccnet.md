@@ -2,7 +2,7 @@
 title: 'Building a build server with CC.NET'
 date: 2006-08-31T01:12:00.000-07:00
 draft: false
-url: /2006/08/building-build-server-with-ccnet.html
+xurlx: /2006/08/building-build-server-with-ccnet.html
 tags: 
 - .Net
 ---

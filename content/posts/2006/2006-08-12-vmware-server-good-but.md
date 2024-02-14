@@ -2,7 +2,7 @@
 title: 'VMWare Server - Good but...'
 date: 2006-08-12T17:20:00.000-07:00
 draft: false
-url: /2006/08/vmware-server-good-but.html
+xurlx: /2006/08/vmware-server-good-but.html
 tags: 
 - General
 ---

@@ -2,7 +2,7 @@
 title: 'Chasing the Technology'
 date: 2004-02-12T14:52:00.000-08:00
 draft: false
-url: /2004/02/chasing-technology.html
+xurlx: /2004/02/chasing-technology.html
 tags: 
 - Rant
 ---

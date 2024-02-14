@@ -3,7 +3,7 @@ title: 'Rob Caron&#39;s Blog - A Team System Nexus : Suggested Reading -
       2005-07-31'
 date: 2005-08-15T13:13:00.000-07:00
 draft: false
-url: /2005/08/rob-caron-blog-team-system-nexus.html
+xurlx: /2005/08/rob-caron-blog-team-system-nexus.html
 tags: 
 - .Net
 - General

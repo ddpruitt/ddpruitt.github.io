@@ -2,7 +2,7 @@
 title: 'G-Ding.TV | Viewing Linux in a whole new way'
 date: 2006-09-08T06:52:00.000-07:00
 draft: false
-url: /2006/09/g-dingtv-viewing-linux-in-whole-new-way.html
+xurlx: /2006/09/g-dingtv-viewing-linux-in-whole-new-way.html
 tags: 
 - General
 ---

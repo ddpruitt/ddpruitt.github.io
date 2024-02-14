@@ -2,7 +2,7 @@
 title: 'NOAA Satellite Link'
 date: 2005-09-01T21:59:00.000-07:00
 draft: false
-url: /2005/09/noaa-satellite-link.html
+xurlx: /2005/09/noaa-satellite-link.html
 tags: 
 - utility
 - General

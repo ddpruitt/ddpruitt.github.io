@@ -2,7 +2,7 @@
 title: 'Period Matrix'
 date: 2004-09-25T10:01:00.000-07:00
 draft: false
-url: /2004/09/period-matrix.html
+xurlx: /2004/09/period-matrix.html
 tags: 
 - SQL Origami
 ---

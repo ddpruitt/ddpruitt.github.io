@@ -2,7 +2,7 @@
 title: 'Simple MapReduce'
 date: 2011-01-10T07:04:00.000-08:00
 draft: false
-url: /2011/01/simple-mapreduce.html
+xurlx: /2011/01/simple-mapreduce.html
 tags: 
 - .Net
 ---

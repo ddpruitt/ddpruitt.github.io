@@ -7,7 +7,7 @@ tags:
 - Hardware
 - Arduino
 ---
-url: /2013/08/dfrobot-wireless-joystick-11-dfr0182_13.html
+xurlx: /2013/08/dfrobot-wireless-joystick-11-dfr0182_13.html
 
 [![DFR0182](./DFR0182.jpg "DFRobot Gamepad")](./DFR0182.jpg)  
   

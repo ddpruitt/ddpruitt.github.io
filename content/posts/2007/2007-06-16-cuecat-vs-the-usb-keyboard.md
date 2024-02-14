@@ -2,7 +2,7 @@
 title: 'CueCat vs the USB Keyboard'
 date: 2007-06-16T15:09:00.000-07:00
 draft: false
-url: /2007/06/cuecat-vs-usb-keyboard.html
+xurlx: /2007/06/cuecat-vs-usb-keyboard.html
 tags: 
 - General
 ---

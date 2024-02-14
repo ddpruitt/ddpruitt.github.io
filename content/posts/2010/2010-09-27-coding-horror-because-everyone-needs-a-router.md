@@ -2,7 +2,7 @@
 title: 'Coding Horror: Because Everyone Needs a Router'
 date: 2010-09-27T07:05:00.000-07:00
 draft: false
-url: /2010/09/coding-horror-because-everyone-needs.html
+xurlx: /2010/09/coding-horror-because-everyone-needs.html
 tags: 
 - Hardware
 ---

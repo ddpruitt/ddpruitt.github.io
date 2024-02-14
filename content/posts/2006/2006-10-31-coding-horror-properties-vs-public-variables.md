@@ -2,7 +2,7 @@
 title: 'Coding Horror: Properties vs. Public Variables'
 date: 2006-10-31T05:36:00.000-08:00
 draft: false
-url: /2006/10/coding-horror-properties-vs-public.html
+xurlx: /2006/10/coding-horror-properties-vs-public.html
 tags: 
 - General
 ---

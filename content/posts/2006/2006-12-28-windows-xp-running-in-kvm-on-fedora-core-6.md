@@ -2,7 +2,7 @@
 title: 'Windows XP running in KVM on Fedora Core 6'
 date: 2006-12-28T04:06:00.000-08:00
 draft: false
-url: /2006/12/windows-xp-running-in-kvm-on-fedora.html
+xurlx: /2006/12/windows-xp-running-in-kvm-on-fedora.html
 tags: 
 - General
 ---

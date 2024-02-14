@@ -3,7 +3,7 @@ title: 'Ralf&#39;s Sudelbücher : .NET naked - See these hitherto unpublished
       pictures of the .NET Framework architecture'
 date: 2006-10-06T22:33:00.000-07:00
 draft: false
-url: /2006/10/ralf-sudelbucher-net-naked-see-these.html
+xurlx: /2006/10/ralf-sudelbucher-net-naked-see-these.html
 tags: 
 - General
 ---

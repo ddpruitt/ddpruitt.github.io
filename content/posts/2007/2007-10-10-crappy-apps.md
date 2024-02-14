@@ -2,7 +2,7 @@
 title: 'Crappy Apps'
 date: 2007-10-10T04:39:00.000-07:00
 draft: false
-url: /2007/10/crappy-apps.html
+xurlx: /2007/10/crappy-apps.html
 tags: 
 - Rant
 - General

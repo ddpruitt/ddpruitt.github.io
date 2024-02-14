@@ -2,7 +2,7 @@
 title: 'State Machine'
 date: 2004-12-03T04:47:00.000-08:00
 draft: false
-url: /2004/12/state-machine.html
+xurlx: /2004/12/state-machine.html
 tags: 
 - Rant
 - General

@@ -2,7 +2,7 @@
 title: 'Katrina Response, Day x'
 date: 2005-10-06T13:53:00.000-07:00
 draft: false
-url: /2005/10/katrina-response-day-x.html
+xurlx: /2005/10/katrina-response-day-x.html
 tags: 
 - Rant
 - General

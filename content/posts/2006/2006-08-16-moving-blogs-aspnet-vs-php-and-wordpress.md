@@ -2,7 +2,7 @@
 title: 'Moving blogs, ASP.NET vs PHP and WordPress'
 date: 2006-08-16T13:30:00.000-07:00
 draft: false
-url: /2006/08/moving-blogs-aspnet-vs-php-and-wordpress.html
+xurlx: /2006/08/moving-blogs-aspnet-vs-php-and-wordpress.html
 tags: 
 - General
 ---

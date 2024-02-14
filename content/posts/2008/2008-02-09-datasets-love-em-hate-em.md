@@ -2,7 +2,7 @@
 title: 'DataSets - Love em Hate em'
 date: 2008-02-09T19:12:00.000-08:00
 draft: false
-url: /2008/02/datasets-love-em-hate-em.html
+xurlx: /2008/02/datasets-love-em-hate-em.html
 tags: 
 - .Net
 - Rant

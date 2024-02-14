@@ -2,7 +2,7 @@
 title: 'Hey Man, so long as it works that is all that matters...'
 date: 2004-07-28T12:40:00.000-07:00
 draft: false
-url: /2004/07/hey-man-so-long-as-it-works-that-is-all.html
+xurlx: /2004/07/hey-man-so-long-as-it-works-that-is-all.html
 tags: 
 - Rant
 ---

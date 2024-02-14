@@ -2,7 +2,7 @@
 title: 'A Call to Distros: Give Users What They Want - OSNews.com'
 date: 2006-12-12T06:02:00.000-08:00
 draft: false
-url: /2006/12/a-call-to-distros-give-users-what-they.html
+xurlx: /2006/12/a-call-to-distros-give-users-what-they.html
 tags: 
 - General
 ---

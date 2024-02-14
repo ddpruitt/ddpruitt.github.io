@@ -2,7 +2,7 @@
 title: 'Comments for a Code Review'
 date: 2006-12-14T14:34:00.000-08:00
 draft: false
-url: /2006/12/comments-for-code-review.html
+xurlx: /2006/12/comments-for-code-review.html
 tags: 
 - Rant
 - General

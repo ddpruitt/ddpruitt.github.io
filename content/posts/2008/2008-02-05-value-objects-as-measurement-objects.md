@@ -2,7 +2,7 @@
 title: 'Value Objects as Measurement Objects'
 date: 2008-02-05T14:42:00.000-08:00
 draft: false
-url: /2008/02/value-objects-as-measurement-objects.html
+xurlx: /2008/02/value-objects-as-measurement-objects.html
 tags: 
 - General
 ---

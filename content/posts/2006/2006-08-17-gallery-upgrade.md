@@ -2,7 +2,7 @@
 title: 'Gallery Upgrade'
 date: 2006-08-17T14:28:00.000-07:00
 draft: false
-url: /2006/08/gallery-upgrade.html
+xurlx: /2006/08/gallery-upgrade.html
 tags: 
 - General
 ---

@@ -2,7 +2,7 @@
 title: 'Use Linq and Reflection to Activate Interface and Execute a Method.'
 date: 2010-09-05T07:58:00.000-07:00
 draft: false
-url: /2010/09/use-linq-and-reflection-to-activate.html
+xurlx: /2010/09/use-linq-and-reflection-to-activate.html
 tags: 
 - .Net
 ---

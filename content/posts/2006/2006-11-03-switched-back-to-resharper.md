@@ -2,7 +2,7 @@
 title: 'Switched Back to ReSharper'
 date: 2006-11-03T02:02:00.000-08:00
 draft: false
-url: /2006/11/switched-back-to-resharper.html
+xurlx: /2006/11/switched-back-to-resharper.html
 tags: 
 - .Net
 ---

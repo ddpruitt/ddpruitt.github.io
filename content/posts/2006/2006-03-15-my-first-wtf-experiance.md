@@ -2,7 +2,7 @@
 title: 'My First WTF Experiance'
 date: 2006-03-15T09:18:00.000-08:00
 draft: false
-url: /2006/03/my-first-wtf-experiance.html
+xurlx: /2006/03/my-first-wtf-experiance.html
 tags: 
 - Rant
 - General

@@ -2,7 +2,7 @@
 title: 'Power Collections for .NET'
 date: 2005-08-06T03:19:00.000-07:00
 draft: false
-url: /2005/08/power-collections-for-net.html
+xurlx: /2005/08/power-collections-for-net.html
 tags: 
 - General
 ---

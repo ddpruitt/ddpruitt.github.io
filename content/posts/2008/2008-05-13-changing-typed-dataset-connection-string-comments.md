@@ -2,7 +2,7 @@
 title: Changing Typed DataSet Connection String
 date: 2008-05-13T13:26:00.000-07:00
 draft: true
-url: /2008/05/changing-typed-dataset-connection-string.html
+xurlx: /2008/05/changing-typed-dataset-connection-string.html
 tags:
   - .Net
 ---

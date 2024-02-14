@@ -2,7 +2,7 @@
 title: 'if we got this far, then everything is working properly'
 date: 2005-08-04T12:14:00.000-07:00
 draft: false
-url: /2005/08/if-we-got-this-far-then-everything-is.html
+xurlx: /2005/08/if-we-got-this-far-then-everything-is.html
 tags: 
 - .Net
 - Rant

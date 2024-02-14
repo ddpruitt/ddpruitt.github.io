@@ -2,7 +2,7 @@
 title: 'SqlAssist, SQL Intellisense'
 date: 2006-04-22T20:41:00.000-07:00
 draft: false
-url: /2006/04/sqlassist-sql-intellisense.html
+xurlx: /2006/04/sqlassist-sql-intellisense.html
 tags: 
 - SQL Origami
 - utility

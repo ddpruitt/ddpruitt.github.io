@@ -2,7 +2,7 @@
 title: 'Public Education - Where Should the Money Go?'
 date: 2006-03-30T06:25:00.000-08:00
 draft: false
-url: /2006/03/public-education-where-should-money-go.html
+xurlx: /2006/03/public-education-where-should-money-go.html
 tags: 
 - Rant
 ---

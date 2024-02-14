@@ -2,7 +2,7 @@
 title: 'World of Warcraft'
 date: 2004-11-19T06:14:00.000-08:00
 draft: false
-url: /2004/11/world-of-warcraft.html
+xurlx: /2004/11/world-of-warcraft.html
 tags: 
 - Rant
 - General

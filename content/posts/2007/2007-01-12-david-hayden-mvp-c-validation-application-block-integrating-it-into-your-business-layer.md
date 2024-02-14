@@ -3,7 +3,7 @@ title: 'David Hayden [MVP C#] : Validation Application Block - Integrating It
       Into Your Business Layer'
 date: 2007-01-12T07:08:00.000-08:00
 draft: false
-url: /2007/01/david-hayden-mvp-c-validation.html
+xurlx: /2007/01/david-hayden-mvp-c-validation.html
 tags: 
 - .Net
 ---

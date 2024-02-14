@@ -2,7 +2,7 @@
 title: 'Resharper vs CodeRush'
 date: 2006-06-10T20:48:00.000-07:00
 draft: false
-url: /2006/06/resharper-vs-coderush.html
+xurlx: /2006/06/resharper-vs-coderush.html
 tags: 
 - .Net
 - Rant

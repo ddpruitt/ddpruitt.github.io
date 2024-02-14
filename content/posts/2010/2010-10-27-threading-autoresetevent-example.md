@@ -2,7 +2,7 @@
 title: 'Threading AutoResetEvent Example'
 date: 2010-10-27T20:25:00.000-07:00
 draft: false
-url: /2010/10/threading-autoresetevent-example.html
+xurlx: /2010/10/threading-autoresetevent-example.html
 tags: 
 - .Net
 ---

@@ -2,7 +2,7 @@
 title: 'F# and Units of Measure'
 date: 2009-09-24T07:06:00.000-07:00
 draft: false
-url: /2009/09/f-and-units-of-measure.html
+xurlx: /2009/09/f-and-units-of-measure.html
 tags: 
 - .Net
 ---

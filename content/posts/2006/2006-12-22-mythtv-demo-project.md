@@ -2,7 +2,7 @@
 title: 'MythTV Demo Project'
 date: 2006-12-22T02:55:00.000-08:00
 draft: false
-url: /2006/12/mythtv-demo-project.html
+xurlx: /2006/12/mythtv-demo-project.html
 tags: 
 - General
 ---

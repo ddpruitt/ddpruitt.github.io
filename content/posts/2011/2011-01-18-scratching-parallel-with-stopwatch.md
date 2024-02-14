@@ -2,7 +2,7 @@
 title: 'Scratching Parallel with StopWatch'
 date: 2011-01-18T00:54:00.000-08:00
 draft: false
-url: /2011/01/scratching-parallel-with-stopwatch.html
+xurlx: /2011/01/scratching-parallel-with-stopwatch.html
 tags: 
 - .Net
 ---

@@ -3,7 +3,7 @@ title: 'Rails 1.1: RJS, Active Record++, respond_to, integration tests, and 500
       other things!'
 date: 2006-03-28T09:56:00.000-08:00
 draft: false
-url: /2006/03/rails-11-rjs-active-record-respondto.html
+xurlx: /2006/03/rails-11-rjs-active-record-respondto.html
 tags: 
 - General
 ---

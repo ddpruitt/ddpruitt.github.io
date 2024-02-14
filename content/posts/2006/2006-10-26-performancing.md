@@ -2,7 +2,7 @@
 title: 'Performancing'
 date: 2006-10-26T11:22:00.000-07:00
 draft: false
-url: /2006/10/performancing.html
+xurlx: /2006/10/performancing.html
 tags: 
 - General
 ---

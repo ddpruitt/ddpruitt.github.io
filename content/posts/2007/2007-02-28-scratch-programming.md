@@ -2,7 +2,7 @@
 title: 'Scratch Programming'
 date: 2007-02-28T13:46:00.000-08:00
 draft: false
-url: /2007/02/scratch-programming.html
+xurlx: /2007/02/scratch-programming.html
 tags: 
 - General
 ---

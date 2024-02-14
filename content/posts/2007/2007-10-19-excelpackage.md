@@ -2,7 +2,7 @@
 title: 'ExcelPackage'
 date: 2007-10-19T02:02:00.000-07:00
 draft: false
-url: /2007/10/excelpackage.html
+xurlx: /2007/10/excelpackage.html
 tags: 
 - General
 ---

@@ -2,7 +2,7 @@
 title: 'RE:Why is Microsoft suddenly so hot for HTML5? | Betanews'
 date: 2010-10-30T00:59:00.000-07:00
 draft: false
-url: /2010/10/rewhy-is-microsoft-suddenly-so-hot-for.html
+xurlx: /2010/10/rewhy-is-microsoft-suddenly-so-hot-for.html
 tags: 
 - Rant
 - General

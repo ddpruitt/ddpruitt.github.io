@@ -2,7 +2,7 @@
 title: 'Excel User Defined Functions with C# and ExcelDna'
 date: 2012-06-13T05:35:00.002-07:00
 draft: false
-url: /2012/06/excel-user-defined-functions-with-c-and_58.html
+xurlx: /2012/06/excel-user-defined-functions-with-c-and_58.html
 tags: 
 - .Net
 - MS Excel

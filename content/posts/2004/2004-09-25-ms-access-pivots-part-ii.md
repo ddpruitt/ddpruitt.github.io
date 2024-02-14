@@ -2,7 +2,7 @@
 title: 'MS Access Pivots Part II'
 date: 2004-09-25T09:45:00.000-07:00
 draft: false
-url: /2004/09/ms-access-pivots-part-ii.html
+xurlx: /2004/09/ms-access-pivots-part-ii.html
 tags: 
 - SQL Origami
 ---

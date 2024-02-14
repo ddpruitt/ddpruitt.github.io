@@ -3,7 +3,7 @@ title: 'Resources for Packaging and Deploying .NET Compact Framework-based
       applications'
 date: 2004-12-05T02:14:00.000-08:00
 draft: false
-url: /2004/12/resources-for-packaging-and-deploying.html
+xurlx: /2004/12/resources-for-packaging-and-deploying.html
 tags: 
 - .Net
 ---

@@ -2,7 +2,7 @@
 title: 'Period Matirx Twisting'
 date: 2004-01-30T09:35:00.000-08:00
 draft: false
-url: /2004/01/period-matirx-twisting.html
+xurlx: /2004/01/period-matirx-twisting.html
 tags: 
 - .Net
 - SQL Origami

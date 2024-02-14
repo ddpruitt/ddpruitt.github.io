@@ -2,7 +2,7 @@
 title: 'FileSystemWatcher With the BlockingCollection'
 date: 2011-10-31T02:48:00.000-07:00
 draft: false
-url: /2011/10/filesystemwatcher-with.html
+xurlx: /2011/10/filesystemwatcher-with.html
 tags: 
 - .Net
 ---

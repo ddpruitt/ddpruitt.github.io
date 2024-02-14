@@ -2,7 +2,7 @@
 title: 'Hurricane Rita'
 date: 2005-09-23T09:24:00.000-07:00
 draft: false
-url: /2005/09/hurricane-rita.html
+xurlx: /2005/09/hurricane-rita.html
 tags: 
 - General
 ---

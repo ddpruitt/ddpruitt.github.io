@@ -2,7 +2,7 @@
 title: 'Parsing Delicious Export File'
 date: 2010-12-25T04:24:00.000-08:00
 draft: false
-url: /2010/12/parsing-delicious-export-file.html
+xurlx: /2010/12/parsing-delicious-export-file.html
 tags: 
 - .Net
 ---

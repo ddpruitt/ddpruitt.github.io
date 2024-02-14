@@ -2,7 +2,7 @@
 title: 'No, wait, I am Dr. Doom'
 date: 2007-01-11T06:03:00.000-08:00
 draft: false
-url: /2007/01/no-wait-i-am-dr-doom.html
+xurlx: /2007/01/no-wait-i-am-dr-doom.html
 tags: 
 - Personality
 ---

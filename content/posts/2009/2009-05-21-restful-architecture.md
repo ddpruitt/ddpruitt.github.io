@@ -2,7 +2,7 @@
 title: 'RESTful Architecture'
 date: 2009-05-21T11:48:00.000-07:00
 draft: false
-url: /2009/05/restful-architecture.html
+xurlx: /2009/05/restful-architecture.html
 tags: 
 - .Net
 - asp.net-mvc

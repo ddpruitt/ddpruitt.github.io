@@ -2,7 +2,7 @@
 title: 'String Joins'
 date: 2011-01-04T08:27:00.000-08:00
 draft: false
-url: /2011/01/string-joins.html
+xurlx: /2011/01/string-joins.html
 tags: 
 - .Net
 ---

@@ -2,7 +2,7 @@
 title: 'CF Form Disposal'
 date: 2004-11-12T04:40:00.000-08:00
 draft: false
-url: /2004/11/cf-form-disposal.html
+xurlx: /2004/11/cf-form-disposal.html
 tags: 
 - .Net
 ---

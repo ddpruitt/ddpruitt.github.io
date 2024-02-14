@@ -2,7 +2,7 @@
 title: 'LINQ to SQL Roundtrips: SQL Trace'
 date: 2009-03-27T12:13:00.000-07:00
 draft: false
-url: /2009/03/linq-to-sql-roundtrips-sql-trace.html
+xurlx: /2009/03/linq-to-sql-roundtrips-sql-trace.html
 tags:
 - .Net
 - SQL Origami

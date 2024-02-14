@@ -2,7 +2,7 @@
 title: 'O&#39;Reilly Network Weblogs: Everything I Know about Programming'
 date: 2005-07-20T06:08:00.000-07:00
 draft: false
-url: /2005/07/o-network-weblogs-everything-i-know.html
+xurlx: /2005/07/o-network-weblogs-everything-i-know.html
 tags: 
 - Rant
 - General

@@ -2,7 +2,7 @@
 title: 'The SMAQ stack for big data - O&#39;Reilly Radar'
 date: 2010-09-24T06:47:00.000-07:00
 draft: false
-url: /2010/09/the-smaq-stack-for-big-data-o-radar.html
+xurlx: /2010/09/the-smaq-stack-for-big-data-o-radar.html
 tags: 
 - Cloud
 ---

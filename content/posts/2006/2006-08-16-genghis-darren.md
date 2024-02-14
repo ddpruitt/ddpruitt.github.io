@@ -2,7 +2,7 @@
 title: 'Genghis Darren'
 date: 2006-08-16T13:44:00.000-07:00
 draft: false
-url: /2006/08/genghis-darren.html
+xurlx: /2006/08/genghis-darren.html
 tags: 
 - Personality
 ---

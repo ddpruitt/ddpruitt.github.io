@@ -2,7 +2,7 @@
 title: 'Reading .NET Configuration Files'
 date: 2006-08-09T08:20:00.000-07:00
 draft: false
-url: /2006/08/reading-net-configuration-files.html
+xurlx: /2006/08/reading-net-configuration-files.html
 tags: 
 - .Net
 ---

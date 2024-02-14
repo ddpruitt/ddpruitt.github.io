@@ -2,7 +2,7 @@
 title: 'Worm Hole to the Universe'
 date: 2007-01-20T13:35:00.000-08:00
 draft: false
-url: /2007/01/worm-hole-to-universe.html
+xurlx: /2007/01/worm-hole-to-universe.html
 tags: 
 - General
 ---

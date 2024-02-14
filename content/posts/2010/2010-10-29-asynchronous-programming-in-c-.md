@@ -2,7 +2,7 @@
 title: 'Asynchronous Programming in C#'
 date: 2010-10-29T04:48:00.000-07:00
 draft: false
-url: /2010/10/asynchronous-programming-in-c.html
+xurlx: /2010/10/asynchronous-programming-in-c.html
 tags: 
 - .Net
 ---

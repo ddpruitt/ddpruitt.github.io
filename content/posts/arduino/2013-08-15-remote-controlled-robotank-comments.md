@@ -2,7 +2,7 @@
 title: Remote Controlled RoboTank
 date: 2013-08-15T05:02:00.002-07:00
 draft: true
-url: /2013/08/remote-controlled-robotank_99.html
+xurlx: /2013/08/remote-controlled-robotank_99.html
 tags:
   - Arduino
 ---

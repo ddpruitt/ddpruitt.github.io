@@ -2,7 +2,7 @@
 title: 'UOW: FileHelpers'
 date: 2010-10-27T20:25:00.001-07:00
 draft: false
-url: /2010/10/uow-filehelpers.html
+xurlx: /2010/10/uow-filehelpers.html
 tags: 
 - .Net
 - uow

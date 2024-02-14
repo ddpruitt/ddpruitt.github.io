@@ -2,7 +2,7 @@
 title: 'Chevy Vega vs. TestDriven.Net'
 date: 2007-06-07T15:23:00.000-07:00
 draft: false
-url: /2007/06/chevy-vega-vs-testdrivennet.html
+xurlx: /2007/06/chevy-vega-vs-testdrivennet.html
 tags: 
 - Rant
 ---

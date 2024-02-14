@@ -2,7 +2,7 @@
 title: 'DataTable: Finding Differences in Column Values'
 date: 2009-03-13T10:56:00.000-07:00
 draft: false
-url: /2009/03/datatable-finding-differences-in-column.html
+xurlx: /2009/03/datatable-finding-differences-in-column.html
 tags: 
 - .Net
 ---

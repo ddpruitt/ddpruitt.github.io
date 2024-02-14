@@ -2,7 +2,7 @@
 title: 'Learning TypeMock.Net'
 date: 2007-03-31T15:26:00.000-07:00
 draft: false
-url: /2007/03/learning-typemocknet.html
+xurlx: /2007/03/learning-typemocknet.html
 tags: 
 - .Net
 ---

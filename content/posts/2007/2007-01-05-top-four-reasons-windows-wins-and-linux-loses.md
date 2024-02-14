@@ -2,7 +2,7 @@
 title: 'Top four reasons Windows wins and Linux loses'
 date: 2007-01-05T04:47:00.000-08:00
 draft: false
-url: /2007/01/top-four-reasons-windows-wins-and-linux.html
+xurlx: /2007/01/top-four-reasons-windows-wins-and-linux.html
 tags: 
 - General
 ---

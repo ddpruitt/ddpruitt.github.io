@@ -2,7 +2,7 @@
 title: 'Using IDataErrorInfo for Validation'
 date: 2009-01-28T10:10:00.000-08:00
 draft: false
-url: /2009/01/using-idataerrorinfo-for-validation.html
+xurlx: /2009/01/using-idataerrorinfo-for-validation.html
 tags: 
 - .Net
 - Rant

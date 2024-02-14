@@ -2,7 +2,7 @@
 title: 'Windows Live Writer'
 date: 2006-10-22T13:44:00.000-07:00
 draft: false
-url: /2006/10/windows-live-writer.html
+xurlx: /2006/10/windows-live-writer.html
 tags: 
 - General
 ---

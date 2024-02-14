@@ -2,7 +2,7 @@
 title: 'The Virtual Domain'
 date: 2006-12-07T02:09:00.000-08:00
 draft: false
-url: /2006/12/the-virtual-domain.html
+xurlx: /2006/12/the-virtual-domain.html
 tags: 
 - General
 ---

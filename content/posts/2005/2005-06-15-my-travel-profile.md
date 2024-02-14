@@ -2,7 +2,7 @@
 title: 'My Travel Profile'
 date: 2005-06-15T12:02:00.000-07:00
 draft: false
-url: /2005/06/my-travel-profile.html
+xurlx: /2005/06/my-travel-profile.html
 tags: 
 - General
 ---

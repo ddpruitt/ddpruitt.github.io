@@ -2,7 +2,7 @@
 title: 'SQL Moment of Clairity'
 date: 2006-10-17T12:16:00.000-07:00
 draft: false
-url: /2006/10/sql-moment-of-clairity.html
+xurlx: /2006/10/sql-moment-of-clairity.html
 tags: 
 - SQL Origami
 ---

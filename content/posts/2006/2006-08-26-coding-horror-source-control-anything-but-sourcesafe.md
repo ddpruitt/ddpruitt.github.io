@@ -2,7 +2,7 @@
 title: 'Coding Horror: Source Control: Anything But SourceSafe'
 date: 2006-08-26T14:16:00.000-07:00
 draft: false
-url: /2006/08/coding-horror-source-control-anything.html
+xurlx: /2006/08/coding-horror-source-control-anything.html
 tags: 
 - General
 ---

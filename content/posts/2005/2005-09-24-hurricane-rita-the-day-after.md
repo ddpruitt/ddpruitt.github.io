@@ -2,7 +2,7 @@
 title: 'Hurricane Rita, the Day After'
 date: 2005-09-24T10:23:00.000-07:00
 draft: false
-url: /2005/09/hurricane-rita-day-after.html
+xurlx: /2005/09/hurricane-rita-day-after.html
 tags: 
 - General
 ---

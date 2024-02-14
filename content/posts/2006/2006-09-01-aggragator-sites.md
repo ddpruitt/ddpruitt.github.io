@@ -2,7 +2,7 @@
 title: 'Aggragator Sites'
 date: 2006-09-01T03:13:00.000-07:00
 draft: false
-url: /2006/09/aggragator-sites.html
+xurlx: /2006/09/aggragator-sites.html
 tags: 
 - General
 ---
