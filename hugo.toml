@@ -1,4 +1,86 @@
+## Basic Configuration
 baseURL = 'https://ddpruitt.github.io/'
 languageCode = 'en-us'
+
 title = 'Tech Shorts'
 theme = 'triple-hyde'
+
+## Hugo Built-in Features
+# disqusShortname = "your-disqus-shortname"
+# googleAnalytics = "your-google-analytics-id"
+# enableRobotsTXT = true
+
+# summarylength = 30
+
+#paginate = 5
+
+## Site Settings
+[params]
+    author = "Darren Pruitt"
+    # title = "Title"
+    description = "My little corner of the verse."
+
+    # sidebar, copyright & license
+    #logoimage = "/img/hugo.png"
+    copyright = "Darren Pruitt"
+    since = 2004
+    license = "CC BY-SA 4.0"
+    licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+    showBuiltWith = true
+
+    # https://highlightjs.org
+    highlightjs = true
+    highlightjsstyle="github-dark"
+
+    themeColor = "theme-base-09"
+    layoutReverse = true
+
+    # please choose either GraphComment or Disqus or Utterances
+    #GraphCommentId = "..."
+    #UtterancesRepo = "..." # https://utteranc.es/
+    #UtterancesIssueTerm = "..." # pathname, url, title, og:title
+    #UtterancesTheme = "..." # github-light or github-dark
+
+    # Table of contents
+    #toc = none, "hugo", or "tocbot"
+    toc = "hugo"
+
+[params.social]
+    gravatar = "darren.pruitt@gmail.com"
+    github = "ddpruitt"
+    linkedin = "darrenpruitt"
+    # instagram = "<username>"
+    # xing = "<username>"
+    # twitter = "<username>"
+    # facebook = "<username>"
+    # microblog = "<username>"
+    # stackoverflow = "<username>"
+    # telegram = "<username>"
+    # # orcid = "<xxxx-xxxx-xxxx-xxxx>"
+    # email = "your-email@example.com"
+    # mastodon = "<username>"
+    # threads = "@<username>"
+    # # gravatar = "your-email@example.com"
+    # # pgpkey = "<path-to-your-key-in-/static>"
+
+## Main Menu
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+[[menu.main]]
+    name = "Arduino"
+    weight = 150
+    identifier = "arduino"
+    url = "/posts/arduino"
+# [[menu.main]]
+#     name = "Portfolio"
+#     identifier = "portfolio"
+#     weight = 200
+#     url = "/portfolio/"
+ [[menu.main]]
+     name = "About"
+     identifier = "about"
+     weight = 300
+     url = "/posts/about/"
