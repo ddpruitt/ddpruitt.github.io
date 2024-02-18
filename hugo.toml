@@ -73,7 +73,7 @@ theme = 'triple-hyde'
     name = "Arduino"
     weight = 150
     identifier = "arduino"
-    url = "/posts/arduino"
+    url = "/arduino"
 # [[menu.main]]
 #     name = "Portfolio"
 #     identifier = "portfolio"
@@ -83,4 +83,4 @@ theme = 'triple-hyde'
      name = "About"
      identifier = "about"
      weight = 300
-     url = "/posts/about/"
+     url = "/about/"
