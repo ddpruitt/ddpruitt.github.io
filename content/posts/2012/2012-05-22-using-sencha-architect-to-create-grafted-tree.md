@@ -1,7 +1,7 @@
 ---
 title: 'Using Sencha Architect to Create Grafted Tree'
 date: 2012-05-22T05:54:00.000-07:00
-draft: true
+draft: false
 url: 
 tags: 
 - ExtJS
