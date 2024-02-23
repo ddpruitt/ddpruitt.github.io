@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "c098a551ba81f977",
+    "type": "split",
+    "children": [
+      {
+        "id": "fff5f4509742d6d3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "81f78b0471ca6ecd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/2024/2024-02-22-updated-blogging.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f0624f6cc17c791e",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb70e428daf86816",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "859c6c0e6aea22e0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e3e33fb20b031197",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0adc0bd94c247917",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1ba57b48ae96eac8",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc0c497093428bce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3eff562d3e8681a8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "posts/2024/2024-02-22-updated-blogging.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "638e38ca61db8458",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "posts/2024/2024-02-22-updated-blogging.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "be249d9a50556b7f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ff985d2e325a1ea4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "posts/2024/2024-02-22-updated-blogging.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "81f78b0471ca6ecd",
+  "lastOpenFiles": [
+    "posts/2024/_index.md",
+    "posts/2024/2024-02-22-updated-blogging.md",
+    "posts/2013/2013-03-22-test-with-picture.md",
+    "posts/_index.md",
+    "posts/2013/2013-03-22-test-blog-post.md",
+    "posts/2024"
+  ]
+}
