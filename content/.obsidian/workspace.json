@@ -146,8 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "81f78b0471ca6ecd",
+  "active": "859c6c0e6aea22e0",
   "lastOpenFiles": [
+    "arduino/dfrobot-wireless-joystick-11-dfr0182-/feature.jpg",
+    "arduino/dfrobot-wireless-joystick-11-dfr0182-/DFR0182 - Copy.jpg",
+    "arduino/remote-controlled-robotank/feature.jpg",
+    "arduino/remote-controlled-robotank/TankAndController01 - Copy.jpg",
     "().md",
     "posts/2024/2024-3-09-ubuntu-on-rpi5/index.md",
     "posts/2024/2024-3-09-ubuntu-on-rpi5/rpi_imager_use_custom.png",
