@@ -1,7 +1,7 @@
 ---
 title: 'Hanselminutes - Not Franklinminutes'
 date: 2006-08-28T13:57:00.000-07:00
-draft: false
+draft: true
 xurlx: /2006/08/hanselminutes-not-franklinminutes.html
 tags: 
 - Rant

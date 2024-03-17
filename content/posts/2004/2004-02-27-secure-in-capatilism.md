@@ -1,7 +1,7 @@
 ---
 title: 'Secure in Capatilism'
 date: 2004-02-27T09:28:00.000-08:00
-draft: false
+draft: true
 xurlx: /2004/02/secure-in-capatilism.html
 tags: 
 - Rant
