@@ -8,7 +8,9 @@ tags:
   - dfr0287
   - Sensors
 ---
-# Sensors
+## Sensors
+
+{{< github repo="ddpruitt/dfr0287-projects" >}}
 
 ## DFRobot Gravity: 37 PCS Sensor Set
 

@@ -7,12 +7,15 @@ tags:
   - Hardware
   - dfr0287
 ---
-# dfr0287-projects
-## DFR0287
+
+
+## DFR0287 Projects
+
+{{< github repo="ddpruitt/dfr0287-projects" >}}
+
 Projects with DFRobot's Gravity LCD12864 Shield for Arduino.
 
 <img src="./DFR0287_pic.jpg" alt="DFR0287" width="200"/>
-
 
 * Framed LCD12864 Shield with LED backlight
 * Power supply: 3.3V
@@ -53,6 +56,7 @@ Detailed specifications:
 * [Open source hardware files on github](https://github.com/adafruit/Adafruit-METRO-328-PCB)
 
 ## PlateformIO
+
 These projects use [Visual Studio Code](https://code.visualstudio.com/) with [PlateformIO](https://platformio.org/) for development.
 
 ## 3D Printed Case
