@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/2024/_index.md",
-                "mode": "preview",
+                "file": "arduino/dfr0287_sensors/index.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 389.5
   },
   "right": {
     "id": "1ba57b48ae96eac8",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/2024/_index.md",
+                "file": "arduino/dfr0287_sensors/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/2024/_index.md",
+                "file": "arduino/dfr0287_sensors/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/2024/_index.md"
+                "file": "arduino/dfr0287_sensors/index.md"
               }
             }
           }
@@ -146,23 +146,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f36f609822c38a3c",
+  "active": "859c6c0e6aea22e0",
   "lastOpenFiles": [
-    "posts/2024/feature.png",
-    "posts/2013/_index.md",
+    "arduino/dfr0287_sensors/feature.jpg",
+    "arduino/dfr0287_sensors/KIT0150-family - Copy.jpg",
+    "arduino/dfr0287_sensors/LM35.jpg",
+    "arduino/dfr0287_sensors/DFR0023.jpg",
+    "arduino/dfr0287_sensors/DHT11.jpg",
+    "arduino/dfr0287_sensors/Temperature_and_Humidity_Sensor.jpg",
+    "arduino/dfr0287_sensors/KIT0150-family.jpg",
+    "arduino/dfr0287/index.md",
+    "arduino/dfr0287_sensors/index.md",
+    "arduino/dfr0287_sensors",
+    "arduino/dfr0287/feature.jpg",
+    "arduino/dfr0287/DFR0287_pic - Copy.jpg",
+    "arduino/dfr0287/DFR0287_pic.jpg",
+    "arduino/dfr0287/DFR0287_Case_3466.jpg",
+    "arduino/dfrobot-wireless-joystick-11-dfr0182-/index.md",
     "posts/2024/_index.md",
+    "arduino/dfr0287",
+    "posts/2013/_index.md",
     "posts/_index.md",
     "posts/2024/2024-3-09-ubuntu-on-rpi5/index.md",
-    "posts/2004/feature.png",
-    "posts/2005/feature.png",
-    "posts/2006/feature.png",
-    "posts/2007/feature.png",
-    "posts/2008/feature.png",
-    "posts/2009/feature.png",
-    "posts/2010/feature.png",
-    "posts/2011/feature.png",
-    "posts/2012/feature.png",
-    "posts/2013/feature.png",
     "posts/2024/2024-3-09-ubuntu-on-rpi5/feature.jpg.0.pdnSave",
     "posts/2024/2024-3-09-ubuntu-on-rpi5/nvme-base-final-7_1500x1500_crop_center.webp.crdownload",
     "().md",
