@@ -22,11 +22,17 @@
     identifier = "arduino"
     weight = 150
 
+[[main]]
+    name = "Research"
+    pageRef = "posts/research"
+    identifier = "research"
+    weight = 200
+
  [[main]]
      name = "About"
      pageRef = "about"
      identifier = "about"
-     weight = 300
+     weight = 1000
 
 #[[main]]
 #  name = "Blog"
@@ -65,10 +71,10 @@
 #  pageRef = "categories"
 #  weight = 20
 
-#[[main]]
-#  name = "Tags"
-#  pageRef = "tags"
-#  weight = 30
+[[main]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 500
 
 
 # -- Footer Menu --
