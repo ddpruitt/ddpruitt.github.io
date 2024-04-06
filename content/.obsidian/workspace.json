@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d5bfc324d6ae00e0",
+        "id": "0aea256f80cdc4d7",
         "type": "tabs",
         "children": [
           {
-            "id": "f36f609822c38a3c",
+            "id": "2bff59e845240aa9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "arduino/dfr0287_sensors/index.md",
+                "file": "posts/research/Nuget/Source Link.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 389.5
+    "width": 302.5
   },
   "right": {
     "id": "1ba57b48ae96eac8",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "arduino/dfr0287_sensors/index.md",
+                "file": "posts/research/Nuget/Source Link.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "arduino/dfr0287_sensors/index.md",
+                "file": "posts/research/Nuget/Source Link.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "arduino/dfr0287_sensors/index.md"
+                "file": "posts/research/Nuget/Source Link.md"
               }
             }
           }
@@ -146,8 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "859c6c0e6aea22e0",
+  "active": "2bff59e845240aa9",
   "lastOpenFiles": [
+    "posts/research/Nuget/_index.md",
+    "posts/research/Nuget/Source Link.md",
+    "posts/research/Nuget",
     "arduino/dfr0287_sensors/feature.jpg",
     "arduino/dfr0287_sensors/KIT0150-family - Copy.jpg",
     "arduino/dfr0287_sensors/LM35.jpg",
@@ -161,7 +164,6 @@
     "arduino/dfr0287/feature.jpg",
     "arduino/dfr0287/DFR0287_pic - Copy.jpg",
     "arduino/dfr0287/DFR0287_pic.jpg",
-    "arduino/dfr0287/DFR0287_Case_3466.jpg",
     "arduino/dfrobot-wireless-joystick-11-dfr0182-/index.md",
     "posts/2024/_index.md",
     "arduino/dfr0287",
