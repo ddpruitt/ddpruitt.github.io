@@ -1,5 +1,5 @@
 ---
-title: 2024-05-05-evernote-to-obsidian
+title: Evernote to Obsidian
 date: 2024-05-05T08:49:00
 draft: false
 tags:
@@ -7,11 +7,11 @@ tags:
   - evernote
 ---
 ## The Problem
-I've used [[https://evernote.com/|Evernote]] since at least 2009 and I loved it.  I didn't use it for note taking, it was primarily my brain and web clipping dump.  The Evernote web clipper is the best out there and still is today.
+I've used [Evernote](https://evernote.com/) since at least 2009 and I loved it.  I didn't use it for note taking, it was primarily my brain and web clipping dump.  The Evernote web clipper is the best out there and still is today.
 
 But times change and Evernote's cost increased to the point where it didn't make economic sense to keep it.  It is still a good product but as I started looking for a replacement I realized that the main thing I used it for was the web clipper.
 
-After reviewing the alternatives I settled on using [[https://obsidian.md/|Obsidian]] to manage my notes and store the Obsidian vault in git.  The advantages are 
+After reviewing the alternatives I settled on using [Obsidian](https://obsidian.md/) to manage my notes and store the Obsidian vault in git.  The advantages are 
 - Not locked into a proprietary note format
 - Cloud storage
 - History of changes built in
@@ -33,7 +33,7 @@ This took me a while to do but once it was done I de-activated my Evernote accou
 Obsidian has the Importer plug-in to directly import ENEX files.  But it is one ENEX at a time so it will take a long time to import all of the files.  Also I found that if the ENEX is large enough the import can fail.
 
 ### evernote2md.exe
-[[https://github.com/wormi4ok/evernote2md|evernote2md]]
+[evernote2md](https://github.com/wormi4ok/evernote2md)
 
 > Evernote2md is a CLI tool to convert Evernote notes exported in \*.enex format to a directory with markdown files.
 
@@ -60,7 +60,7 @@ foreach ($file in $enexFiles) {
 ```
 ## Web Clipping
 ### Markdownload
-[[https://github.com/deathau/markdownload|markdownload]]
+[markdownload](https://github.com/deathau/markdownload)
 
 > This is an extension to clip websites and download them into a readable markdown file. Please keep in mind that it is not guaranteed to work on all websites.
 

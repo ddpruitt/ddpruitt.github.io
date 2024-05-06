@@ -11,11 +11,9 @@
             "id": "2bff59e845240aa9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian.md",
-                "mode": "source",
-                "source": false
+                "file": "posts/blog/2024/feature.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian.md",
+                "file": "posts/blog/2024/feature.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian.md",
+                "file": "posts/blog/2024/feature.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian.md"
+                "file": "posts/blog/2024/feature.png"
               }
             }
           },
@@ -157,10 +155,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2bff59e845240aa9",
+  "active": "859c6c0e6aea22e0",
   "lastOpenFiles": [
+    "posts/blog/2024/2024-05-05-evernote-to-obsidian/feature.png",
+    "posts/blog/2024/2024-05-05-evernote-to-obsidian/_index.md",
+    "posts/blog/2024/2024-05-05-evernote-to-obsidian",
     "system/templates/Post Frontmatter.md",
-    "posts/blog/2024/2024-05-05-evernote-to-obsidian.md",
     "posts/arduino/dfr0287_menu/index.md",
     "posts/arduino/dfr0287/DFR0287_Case_3466.jpg",
     "_index.md",
