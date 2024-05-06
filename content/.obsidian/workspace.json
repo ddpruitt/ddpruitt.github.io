@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/research/Nuget/Source Link.md",
+                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/research/Nuget/Source Link.md",
+                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/research/Nuget/Source Link.md",
+                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,8 +125,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/research/Nuget/Source Link.md"
+                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian.md"
               }
+            }
+          },
+          {
+            "id": "695d6ac1334b539b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
             }
           }
         ]
@@ -143,13 +151,24 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "2bff59e845240aa9",
   "lastOpenFiles": [
-    "posts/research/Nuget/_index.md",
+    "system/templates/Post Frontmatter.md",
+    "posts/blog/2024/2024-05-05-evernote-to-obsidian.md",
+    "posts/arduino/dfr0287_menu/index.md",
+    "posts/arduino/dfr0287/DFR0287_Case_3466.jpg",
+    "_index.md",
+    "system/templates",
+    "system",
+    "posts/blog/2004/2004-12-05-resources-for-packaging-and-deploying-net-compact-framework-based-applications.md",
     "posts/research/Nuget/Source Link.md",
+    "posts/research/Nuget/_index.md",
     "posts/research/Nuget",
     "arduino/dfr0287_sensors/feature.jpg",
     "arduino/dfr0287_sensors/KIT0150-family - Copy.jpg",
@@ -163,7 +182,6 @@
     "arduino/dfr0287_sensors",
     "arduino/dfr0287/feature.jpg",
     "arduino/dfr0287/DFR0287_pic - Copy.jpg",
-    "arduino/dfr0287/DFR0287_pic.jpg",
     "arduino/dfrobot-wireless-joystick-11-dfr0182-/index.md",
     "posts/2024/_index.md",
     "arduino/dfr0287",

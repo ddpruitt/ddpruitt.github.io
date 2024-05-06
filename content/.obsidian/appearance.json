@@ -1,3 +1,7 @@
 {
-  "accentColor": ""
+  "accentColor": "",
+  "cssTheme": "AnuPpuccin",
+  "enabledCssSnippets": [
+    "extended-colorschemes"
+  ]
 }
