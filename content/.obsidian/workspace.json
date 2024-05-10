@@ -8,12 +8,26 @@
         "type": "tabs",
         "children": [
           {
+            "id": "784ab4627ba1b1f0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "a764c491e24a6c0f",
+        "type": "tabs",
+        "children": [
+          {
             "id": "2bff59e845240aa9",
             "type": "leaf",
             "state": {
               "type": "image",
               "state": {
-                "file": "posts/blog/2024/feature.png"
+                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian/feature.png"
               }
             }
           }
@@ -83,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/blog/2024/feature.png",
+                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian/feature.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/blog/2024/feature.png",
+                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian/feature.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/blog/2024/feature.png"
+                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian/feature.png"
               }
             }
           },
@@ -155,10 +169,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "859c6c0e6aea22e0",
+  "active": "2bff59e845240aa9",
   "lastOpenFiles": [
-    "posts/blog/2024/2024-05-05-evernote-to-obsidian/index.md",
+    "posts/blog/2024/feature.png",
     "posts/blog/2024/2024-05-05-evernote-to-obsidian/feature.png",
+    "posts/blog/2024/2024-05-05-evernote-to-obsidian/ddpruitt_Imagine_an_inventors_workshop_crammed_with_steampunk_g_1096add5-96eb-4e06-9ad3-3e58869bc002.png",
+    "posts/blog/2024/2024-05-05-evernote-to-obsidian/index.md",
     "posts/blog/2024/2024-05-05-evernote-to-obsidian/_index.md",
     "posts/blog/2024/2024-05-05-evernote-to-obsidian",
     "system/templates/Post Frontmatter.md",
@@ -181,7 +197,6 @@
     "arduino/dfr0287/index.md",
     "arduino/dfr0287_sensors/index.md",
     "arduino/dfr0287_sensors",
-    "arduino/dfr0287/feature.jpg",
     "arduino/dfrobot-wireless-joystick-11-dfr0182-/index.md",
     "posts/2024/_index.md",
     "arduino/dfr0287",
