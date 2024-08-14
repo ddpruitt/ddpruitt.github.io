@@ -4,20 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "0aea256f80cdc4d7",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "784ab4627ba1b1f0",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
         "id": "a764c491e24a6c0f",
         "type": "tabs",
         "children": [
@@ -25,9 +11,11 @@
             "id": "2bff59e845240aa9",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian/feature.png"
+                "file": "posts/research/Nuget/Source Link.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian/feature.png",
+                "file": "posts/research/Nuget/Source Link.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian/feature.png",
+                "file": "posts/research/Nuget/Source Link.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/blog/2024/2024-05-05-evernote-to-obsidian/feature.png"
+                "file": "posts/research/Nuget/Source Link.md"
               }
             }
           },
@@ -171,6 +159,16 @@
   },
   "active": "2bff59e845240aa9",
   "lastOpenFiles": [
+    "posts/research/Nuget/_index.md",
+    "posts/research/Nuget/Source Link.md",
+    "posts/research/_index.md",
+    "system/templates/Post Frontmatter.md",
+    "_index.md",
+    "posts/arduino/dfr0287/index.md",
+    "posts/arduino/_index.md",
+    "posts/research/feature.jpg",
+    "about/index.md",
+    "posts/blog/2024/2024-05-05-evernote-to-obsidian/feature.png",
     "posts/blog/2004/feature.png",
     "posts/blog/2004/dragonfly01.png",
     "posts/blog/2005/feature.png",
@@ -179,20 +177,13 @@
     "posts/blog/2006/gi_joe01.png",
     "posts/blog/2007/feature.jpg",
     "posts/blog/2007/pirate_cool01.jpg",
-    "posts/blog/2008/feature.jpg",
-    "posts/blog/2008/fire_woman01.jpg",
-    "posts/blog/2009/feature.png",
     "posts/blog/2024/2024-05-05-evernote-to-obsidian/index.md",
     "posts/blog/2024/2024-05-05-evernote-to-obsidian/_index.md",
     "posts/blog/2024/2024-05-05-evernote-to-obsidian",
-    "system/templates/Post Frontmatter.md",
     "posts/arduino/dfr0287_menu/index.md",
-    "_index.md",
     "system/templates",
     "system",
     "posts/blog/2004/2004-12-05-resources-for-packaging-and-deploying-net-compact-framework-based-applications.md",
-    "posts/research/Nuget/Source Link.md",
-    "posts/research/Nuget/_index.md",
     "posts/research/Nuget",
     "arduino/dfr0287/index.md",
     "arduino/dfr0287_sensors/index.md",

@@ -1,3 +1,10 @@
+---
+title: Source Link
+date: 2024-08-14T12:30:00
+draft: false
+tags:
+---
+
 ## Debugging NuGet Packages with Source Link
 
 Reference: [Improved .NET Debugging Experience with Source Link - NDepend]([https://blog.ndepend.com/improved-net-debugging-experience-with-source-link/](https://blog.ndepend.com/improved-net-debugging-experience-with-source-link/))
