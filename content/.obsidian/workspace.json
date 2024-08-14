@@ -11,11 +11,9 @@
             "id": "2bff59e845240aa9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "posts/research/Nuget/Source Link.md",
-                "mode": "source",
-                "source": false
+                "file": "posts/research/Nuget/feature.jpg"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/research/Nuget/Source Link.md",
+                "file": "posts/research/Nuget/feature.jpg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/research/Nuget/Source Link.md",
+                "file": "posts/research/Nuget/feature.jpg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/research/Nuget/Source Link.md"
+                "file": "posts/research/Nuget/feature.jpg"
               }
             }
           },
@@ -159,14 +157,17 @@
   },
   "active": "2bff59e845240aa9",
   "lastOpenFiles": [
-    "posts/research/Nuget/_index.md",
     "posts/research/Nuget/Source Link.md",
+    "posts/research/Nuget/feature.jpg",
+    "feature.png",
+    "posts/research/Nuget/knight01.jpg",
+    "posts/research/feature.jpg",
+    "posts/research/Nuget/_index.md",
     "posts/research/_index.md",
     "system/templates/Post Frontmatter.md",
     "_index.md",
     "posts/arduino/dfr0287/index.md",
     "posts/arduino/_index.md",
-    "posts/research/feature.jpg",
     "about/index.md",
     "posts/blog/2024/2024-05-05-evernote-to-obsidian/feature.png",
     "posts/blog/2004/feature.png",
@@ -174,9 +175,6 @@
     "posts/blog/2005/feature.png",
     "posts/blog/2005/knight02.png",
     "posts/blog/2006/feature.png",
-    "posts/blog/2006/gi_joe01.png",
-    "posts/blog/2007/feature.jpg",
-    "posts/blog/2007/pirate_cool01.jpg",
     "posts/blog/2024/2024-05-05-evernote-to-obsidian/index.md",
     "posts/blog/2024/2024-05-05-evernote-to-obsidian/_index.md",
     "posts/blog/2024/2024-05-05-evernote-to-obsidian",
